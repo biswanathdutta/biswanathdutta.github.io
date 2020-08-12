@@ -1,0 +1,1939 @@
+<http://www.isibang.ac.in/ns/codo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.isibang.ac.in/ns/codo> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.isibang.ac.in/ns/codo/1.0> .
+<http://www.isibang.ac.in/ns/codo> <http://omv.ontoware.org/2005/05/ontology#designedForOntologyTask> "This COVID-19 ontology is a data model for publishing COVID-19 data on the Web as a Graph. \n\nThe primary focuses of the model are: \n(1) COVID-19 cases: the data for COVID-19 cases (e.g., active, recovered, deceased, migrated) ondaily basis across the geo-location (district, state and country), available resources and requirements; \n(2) COVID-19 patient data: nationality, symptom, suspected level of covid -19 cases, covid-19 treatment facility, covid-19 clinical facility, patient's travel history, inter-personal relationships between patients, suspected transmission reason, tracking of patient test results, etc."@en .
+<http://www.isibang.ac.in/ns/codo> <http://purl.org/dc/terms/created> "2020-04-27T10:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.isibang.ac.in/ns/codo> <http://purl.org/dc/terms/creator> "Biswanath Dutta (Indian Statistical Institute, India)"@en .
+<http://www.isibang.ac.in/ns/codo> <http://purl.org/dc/terms/creator> "Michael DeBellis (Semantic Web Consultant, USA)"@en .
+<http://www.isibang.ac.in/ns/codo> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.isibang.ac.in/ns/codo> <http://purl.org/dc/terms/publisher> "Indian Statistical Institute"@en .
+<http://www.isibang.ac.in/ns/codo> <http://purl.org/dc/terms/title> "CODO: COviD-19 Ontology for Cases and Patient information"@en .
+<http://www.isibang.ac.in/ns/codo> <http://www.isibang.ac.in/ns/mod#browsingUI> "http://www.isibang.ac.in/ns/codo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.isibang.ac.in/ns/codo> <http://www.isibang.ac.in/ns/mod#competencyQuestion> "Some example competency questions: \nHow many people recovered from COVId-19 in place p until date t? \nHow many people died in country c? \nGive me the travel history of patient p? \nGive me the COVID-19 patients and their relationship, if any. \nGive me the COVID-19 patients who are in family relationships. \nGive me the primary reasons for the maximum number of COVID-19 patients. \nGive me the most prevalent symtopms of Severe COVID-19." .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://omv.ontoware.org/2005/05/ontology#designedForOntologyTask
+<http://omv.ontoware.org/2005/05/ontology#designedForOntologyTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.isibang.ac.in/ns/mod#browsingUI
+<http://www.isibang.ac.in/ns/mod#browsingUI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.isibang.ac.in/ns/mod#competencyQuestion
+<http://www.isibang.ac.in/ns/mod#competencyQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.isibang.ac.in/ns/mod#rootClasses
+<http://www.isibang.ac.in/ns/mod#rootClasses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#seeAlso
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.isibang.ac.in/ns/codo#admittedIn
+<http://www.isibang.ac.in/ns/codo#admittedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#admittedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Patient> .
+<http://www.isibang.ac.in/ns/codo#admittedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.isibang.ac.in/ns/codo#COVID-19DedicatedFacility> .
+<http://www.isibang.ac.in/ns/codo#admittedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The patient admitted to the covid-19 dedicated facilities, like home, hotel, hospital, etc."@en .
+<http://www.isibang.ac.in/ns/codo#admittedIn> <http://www.w3.org/2000/01/rdf-schema#label> "admitted in"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#clinicalFacility
+<http://www.isibang.ac.in/ns/codo#clinicalFacility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#clinicalFacility> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#Disease> .
+<http://www.isibang.ac.in/ns/codo#clinicalFacility> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/MedicalClinic> .
+<http://www.isibang.ac.in/ns/codo#clinicalFacility> <http://www.w3.org/2000/01/rdf-schema#comment> "The medical clinic where testing/ diagnosis for disease is available."@en .
+<http://www.isibang.ac.in/ns/codo#clinicalFacility> <http://www.w3.org/2000/01/rdf-schema#label> "clinical facility"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#co-worker
+<http://www.isibang.ac.in/ns/codo#co-worker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#co-worker> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#hasRelationship> .
+<http://www.isibang.ac.in/ns/codo#co-worker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.isibang.ac.in/ns/codo#co-worker> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#co-worker> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#co-worker> <http://www.w3.org/2000/01/rdf-schema#comment> "Two persons in co-worker relation."@en .
+<http://www.isibang.ac.in/ns/codo#co-worker> <http://www.w3.org/2000/01/rdf-schema#label> "co-worker"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#countryWiseStatistics
+<http://www.isibang.ac.in/ns/codo#countryWiseStatistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#countryWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#hasStatistics> .
+<http://www.isibang.ac.in/ns/codo#countryWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Country> .
+<http://www.isibang.ac.in/ns/codo#countryWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.isibang.ac.in/ns/codo#CountryWiseStatistics> .
+<http://www.isibang.ac.in/ns/codo#countryWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#comment> "A property to connect to the country wise metrics related to the casualities of the disease."@en .
+<http://www.isibang.ac.in/ns/codo#countryWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#label> "country wise statistics"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#covid-19ClinicalFacility
+<http://www.isibang.ac.in/ns/codo#covid-19ClinicalFacility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#covid-19ClinicalFacility> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#clinicalFacility> .
+<http://www.isibang.ac.in/ns/codo#covid-19ClinicalFacility> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#DiseaseCausedByCoronaviridae> .
+<http://www.isibang.ac.in/ns/codo#covid-19ClinicalFacility> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/CovidTestingFacility> .
+<http://www.isibang.ac.in/ns/codo#covid-19ClinicalFacility> <http://www.w3.org/2000/01/rdf-schema#comment> "The medical clinic where testing/ diagnosis for the COVID-19 Coronavirus disease is available."@en .
+<http://www.isibang.ac.in/ns/codo#covid-19ClinicalFacility> <http://www.w3.org/2000/01/rdf-schema#label> "covid-19 clinical facility"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#districtWiseStatistics
+<http://www.isibang.ac.in/ns/codo#districtWiseStatistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#districtWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#hasStatistics> .
+<http://www.isibang.ac.in/ns/codo#districtWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#District> .
+<http://www.isibang.ac.in/ns/codo#districtWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.isibang.ac.in/ns/codo#DistrictWiseStatistics> .
+<http://www.isibang.ac.in/ns/codo#districtWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#comment> "A property to connect to the district wise metrics related to the casualities of the disease."@en .
+<http://www.isibang.ac.in/ns/codo#districtWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#label> "district wise statistics"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#domesticHelp
+<http://www.isibang.ac.in/ns/codo#domesticHelp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#domesticHelp> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#hasRelationship> .
+<http://www.isibang.ac.in/ns/codo#domesticHelp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#domesticHelp> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#domesticHelp> <http://www.w3.org/2000/01/rdf-schema#comment> "A person is a domestic help to anothe person."@en .
+<http://www.isibang.ac.in/ns/codo#domesticHelp> <http://www.w3.org/2000/01/rdf-schema#label> "domestic help"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#hasAunt
+<http://www.isibang.ac.in/ns/codo#hasAunt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#hasAunt> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#kinswomen> .
+<http://www.isibang.ac.in/ns/codo#hasAunt> <http://www.w3.org/2000/01/rdf-schema#comment> "The sister of your father or mother; the wife of your uncle."@en .
+<http://www.isibang.ac.in/ns/codo#hasAunt> <http://www.w3.org/2000/01/rdf-schema#label> "hasAunt"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#hasBrother
+<http://www.isibang.ac.in/ns/codo#hasBrother> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#hasBrother> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#hasSibling> .
+<http://www.isibang.ac.in/ns/codo#hasBrother> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#kinsman> .
+<http://www.isibang.ac.in/ns/codo#hasBrother> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#hasBrother> <http://www.w3.org/2000/01/rdf-schema#comment> "A male with the same parents as someone else."@en .
+<http://www.isibang.ac.in/ns/codo#hasBrother> <http://www.w3.org/2000/01/rdf-schema#label> "hasBrother"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#hasChild
+<http://www.isibang.ac.in/ns/codo#hasChild> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#hasChild> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#hasRelationship> .
+<http://www.isibang.ac.in/ns/codo#hasChild> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.isibang.ac.in/ns/codo#isChildOf> .
+# 
+# http://www.isibang.ac.in/ns/codo#hasDaughter
+<http://www.isibang.ac.in/ns/codo#hasDaughter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#hasDaughter> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#hasChild> .
+<http://www.isibang.ac.in/ns/codo#hasDaughter> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.isibang.ac.in/ns/codo#isDaughterOf> .
+<http://www.isibang.ac.in/ns/codo#hasDaughter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.isibang.ac.in/ns/codo#Woman> .
+# 
+# http://www.isibang.ac.in/ns/codo#hasDiagnosis
+<http://www.isibang.ac.in/ns/codo#hasDiagnosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#hasDiagnosis> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.isibang.ac.in/ns/codo#isDiagnosisFor> .
+<http://www.isibang.ac.in/ns/codo#hasDiagnosis> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Patient> .
+<http://www.isibang.ac.in/ns/codo#hasDiagnosis> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.isibang.ac.in/ns/codo#Diagnosis> .
+<http://www.isibang.ac.in/ns/codo#hasDiagnosis> <http://www.w3.org/2000/01/rdf-schema#comment> "The diagnosis details of a patient."@en .
+<http://www.isibang.ac.in/ns/codo#hasDiagnosis> <http://www.w3.org/2000/01/rdf-schema#label> "has diagnosis"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#hasHusband
+<http://www.isibang.ac.in/ns/codo#hasHusband> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#hasHusband> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#hasSpouse> .
+<http://www.isibang.ac.in/ns/codo#hasHusband> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.isibang.ac.in/ns/codo#hasWife> .
+<http://www.isibang.ac.in/ns/codo#hasHusband> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#Woman> .
+<http://www.isibang.ac.in/ns/codo#hasHusband> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.isibang.ac.in/ns/codo#Man> .
+<http://www.isibang.ac.in/ns/codo#hasHusband> <http://www.w3.org/2000/01/rdf-schema#label> "hasHusband"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#hasNephew
+<http://www.isibang.ac.in/ns/codo#hasNephew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#hasNephew> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#kinsman> .
+<http://www.isibang.ac.in/ns/codo#hasNephew> <http://www.w3.org/2000/01/rdf-schema#comment> "A son of your brother or sister."@en .
+<http://www.isibang.ac.in/ns/codo#hasNephew> <http://www.w3.org/2000/01/rdf-schema#label> "hasNephew"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#hasNiece
+<http://www.isibang.ac.in/ns/codo#hasNiece> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#hasNiece> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#kinswomen> .
+<http://www.isibang.ac.in/ns/codo#hasNiece> <http://www.w3.org/2000/01/rdf-schema#comment> "A daughter of your brother or sister."@en .
+<http://www.isibang.ac.in/ns/codo#hasNiece> <http://www.w3.org/2000/01/rdf-schema#label> "hasNiece"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#hasPart
+<http://www.isibang.ac.in/ns/codo#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#hasPart> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.isibang.ac.in/ns/codo#isPartOf> .
+<http://www.isibang.ac.in/ns/codo#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a place has a place part."@en .
+<http://www.isibang.ac.in/ns/codo#hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "has part"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#hasRelationship
+<http://www.isibang.ac.in/ns/codo#hasRelationship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#hasRelationship> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#hasRelationship> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#hasRelationship> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic property to store the relationships between persons."@en .
+<http://www.isibang.ac.in/ns/codo#hasRelationship> <http://www.w3.org/2000/01/rdf-schema#label> "has relationships"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#hasSibling
+<http://www.isibang.ac.in/ns/codo#hasSibling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#hasSibling> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#hasRelationship> .
+<http://www.isibang.ac.in/ns/codo#hasSibling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+# 
+# http://www.isibang.ac.in/ns/codo#hasSister
+<http://www.isibang.ac.in/ns/codo#hasSister> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#hasSister> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#hasSibling> .
+<http://www.isibang.ac.in/ns/codo#hasSister> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#kinswomen> .
+<http://www.isibang.ac.in/ns/codo#hasSister> <http://www.w3.org/2000/01/rdf-schema#comment> "A female person who has the same parents as another person."@en .
+<http://www.isibang.ac.in/ns/codo#hasSister> <http://www.w3.org/2000/01/rdf-schema#label> "hasSister"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#hasSon
+<http://www.isibang.ac.in/ns/codo#hasSon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#hasSon> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#hasChild> .
+<http://www.isibang.ac.in/ns/codo#hasSon> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.isibang.ac.in/ns/codo#isSonOf> .
+<http://www.isibang.ac.in/ns/codo#hasSon> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.isibang.ac.in/ns/codo#Man> .
+# 
+# http://www.isibang.ac.in/ns/codo#hasSpouse
+<http://www.isibang.ac.in/ns/codo#hasSpouse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#hasSpouse> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#hasRelationship> .
+<http://www.isibang.ac.in/ns/codo#hasSpouse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.isibang.ac.in/ns/codo#hasSpouse> <http://www.w3.org/2000/01/rdf-schema#comment> "Two persons in married relationship."@en .
+<http://www.isibang.ac.in/ns/codo#hasSpouse> <http://www.w3.org/2000/01/rdf-schema#label> "spouse"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#hasStatistics
+<http://www.isibang.ac.in/ns/codo#hasStatistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#hasStatistics> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.isibang.ac.in/ns/codo#isCovid-19StatisticsOf> .
+<http://www.isibang.ac.in/ns/codo#hasStatistics> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Place> .
+<http://www.isibang.ac.in/ns/codo#hasStatistics> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.isibang.ac.in/ns/codo#Statistics> .
+<http://www.isibang.ac.in/ns/codo#hasStatistics> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic property to connect to the metrics related to the casualities of the disease."@en .
+<http://www.isibang.ac.in/ns/codo#hasStatistics> <http://www.w3.org/2000/01/rdf-schema#label> "has statistics"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#hasSymptom
+<http://www.isibang.ac.in/ns/codo#hasSymptom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#hasSymptom> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Patient> .
+<http://www.isibang.ac.in/ns/codo#hasSymptom> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/SYMP_0000462> .
+<http://www.isibang.ac.in/ns/codo#hasSymptom> <http://www.w3.org/2000/01/rdf-schema#comment> "Any sensation or change in bodily function that is experienced by a patient and is associated with a particular disease."@en .
+<http://www.isibang.ac.in/ns/codo#hasSymptom> <http://www.w3.org/2000/01/rdf-schema#label> "has symptom"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#hasTestResult
+<http://www.isibang.ac.in/ns/codo#hasTestResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#hasTestResult> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.isibang.ac.in/ns/codo#isTestResultFor> .
+<http://www.isibang.ac.in/ns/codo#hasTestResult> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Patient> .
+<http://www.isibang.ac.in/ns/codo#hasTestResult> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.isibang.ac.in/ns/codo#TestResult> .
+<http://www.isibang.ac.in/ns/codo#hasTestResult> <http://www.w3.org/2000/01/rdf-schema#comment> "A patient has clinical test result."@en .
+<http://www.isibang.ac.in/ns/codo#hasTestResult> <http://www.w3.org/2000/01/rdf-schema#label> "has test result"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#hasUncle
+<http://www.isibang.ac.in/ns/codo#hasUncle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#hasUncle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#kinsman> .
+<http://www.isibang.ac.in/ns/codo#hasUncle> <http://www.w3.org/2000/01/rdf-schema#comment> "The brother of your father or mother; the husband of your aunt."@en .
+<http://www.isibang.ac.in/ns/codo#hasUncle> <http://www.w3.org/2000/01/rdf-schema#label> "hasUncle"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#hasWife
+<http://www.isibang.ac.in/ns/codo#hasWife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#hasWife> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#hasSpouse> .
+<http://www.isibang.ac.in/ns/codo#hasWife> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#Man> .
+<http://www.isibang.ac.in/ns/codo#hasWife> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.isibang.ac.in/ns/codo#Woman> .
+<http://www.isibang.ac.in/ns/codo#hasWife> <http://www.w3.org/2000/01/rdf-schema#label> "hasWife"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#isChildOf
+<http://www.isibang.ac.in/ns/codo#isChildOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#isChildOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#hasRelationship> .
+# 
+# http://www.isibang.ac.in/ns/codo#isCovid-19StatisticsOf
+<http://www.isibang.ac.in/ns/codo#isCovid-19StatisticsOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#isCovid-19StatisticsOf> <http://www.w3.org/2000/01/rdf-schema#label> "is covid-19 statistics of"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#isDaughterOf
+<http://www.isibang.ac.in/ns/codo#isDaughterOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#isDaughterOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#isChildOf> .
+# 
+# http://www.isibang.ac.in/ns/codo#isDiagnosisFor
+<http://www.isibang.ac.in/ns/codo#isDiagnosisFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#isDiagnosisFor> <http://www.w3.org/2000/01/rdf-schema#label> "is diagnosis of"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#isPartOf
+<http://www.isibang.ac.in/ns/codo#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.isibang.ac.in/ns/codo#isPartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Place> .
+<http://www.isibang.ac.in/ns/codo#isPartOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/Place> .
+<http://www.isibang.ac.in/ns/codo#isPartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A place is part of another place."@en .
+<http://www.isibang.ac.in/ns/codo#isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "is part of"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#isSonOf
+<http://www.isibang.ac.in/ns/codo#isSonOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#isSonOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#isChildOf> .
+# 
+# http://www.isibang.ac.in/ns/codo#isTestResultFor
+<http://www.isibang.ac.in/ns/codo#isTestResultFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#isTestResultFor> <http://www.w3.org/2000/01/rdf-schema#label> "is test result for"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#kinsman
+<http://www.isibang.ac.in/ns/codo#kinsman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#kinsman> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#hasRelationship> .
+<http://www.isibang.ac.in/ns/codo#kinsman> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.isibang.ac.in/ns/codo#Man> .
+<http://www.isibang.ac.in/ns/codo#kinsman> <http://www.w3.org/2000/01/rdf-schema#comment> "A male relative."@en .
+<http://www.isibang.ac.in/ns/codo#kinsman> <http://www.w3.org/2000/01/rdf-schema#label> "kinsman"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#kinswomen
+<http://www.isibang.ac.in/ns/codo#kinswomen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#kinswomen> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#hasRelationship> .
+<http://www.isibang.ac.in/ns/codo#kinswomen> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.isibang.ac.in/ns/codo#Woman> .
+<http://www.isibang.ac.in/ns/codo#kinswomen> <http://www.w3.org/2000/01/rdf-schema#comment> "A female relative."@en .
+<http://www.isibang.ac.in/ns/codo#kinswomen> <http://www.w3.org/2000/01/rdf-schema#label> "kinswomen"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#laboratoryTestFinding
+<http://www.isibang.ac.in/ns/codo#laboratoryTestFinding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#laboratoryTestFinding> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#hasTestResult> .
+<http://www.isibang.ac.in/ns/codo#laboratoryTestFinding> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.isibang.ac.in/ns/codo#LaboratiryTestFinding> .
+<http://www.isibang.ac.in/ns/codo#laboratoryTestFinding> <http://www.w3.org/2000/01/rdf-schema#comment> "Patient's covid-19 clinical test result."@en .
+<http://www.isibang.ac.in/ns/codo#laboratoryTestFinding> <http://www.w3.org/2000/01/rdf-schema#label> "laboratory test finding"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#location
+<http://www.isibang.ac.in/ns/codo#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#location> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.isibang.ac.in/ns/codo#Disease> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Organization> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Person> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.isibang.ac.in/ns/codo#location> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/Place> .
+<http://www.isibang.ac.in/ns/codo#location> <http://www.w3.org/2000/01/rdf-schema#comment> "The location of for example where a person is situated, an organization (covid-19 dedicated facilities, medical clinics) is located, or the geographic coverage of a disease."@en .
+<http://www.isibang.ac.in/ns/codo#location> <http://www.w3.org/2000/01/rdf-schema#label> "location"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#mostRecentTestResult
+<http://www.isibang.ac.in/ns/codo#mostRecentTestResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#mostRecentTestResult> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#hasTestResult> .
+<http://www.isibang.ac.in/ns/codo#mostRecentTestResult> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.isibang.ac.in/ns/codo#VitalSigns> .
+<http://www.isibang.ac.in/ns/codo#mostRecentTestResult> <http://www.w3.org/2000/01/rdf-schema#comment> "The most recent covid-19 clinical test result."@en .
+<http://www.isibang.ac.in/ns/codo#mostRecentTestResult> <http://www.w3.org/2000/01/rdf-schema#label> "most recent test result"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#nextTestResult
+<http://www.isibang.ac.in/ns/codo#nextTestResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#nextTestResult> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.isibang.ac.in/ns/codo#previousTestResult> .
+<http://www.isibang.ac.in/ns/codo#nextTestResult> <http://www.w3.org/2000/01/rdf-schema#comment> "The next clinical test result of a patient."@en .
+<http://www.isibang.ac.in/ns/codo#nextTestResult> <http://www.w3.org/2000/01/rdf-schema#label> "next test result"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#previousTestResult
+<http://www.isibang.ac.in/ns/codo#previousTestResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#previousTestResult> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#VitalSigns> .
+<http://www.isibang.ac.in/ns/codo#previousTestResult> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.isibang.ac.in/ns/codo#VitalSigns> .
+<http://www.isibang.ac.in/ns/codo#previousTestResult> <http://www.w3.org/2000/01/rdf-schema#comment> "The previous clinical test result of a patient."@en .
+<http://www.isibang.ac.in/ns/codo#previousTestResult> <http://www.w3.org/2000/01/rdf-schema#label> "previous test result"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#roommate
+<http://www.isibang.ac.in/ns/codo#roommate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#roommate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#hasRelationship> .
+<http://www.isibang.ac.in/ns/codo#roommate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.isibang.ac.in/ns/codo#roommate> <http://www.w3.org/2000/01/rdf-schema#comment> "An associate who shares a room with you."@en .
+<http://www.isibang.ac.in/ns/codo#roommate> <http://www.w3.org/2000/01/rdf-schema#label> "roommate"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#securityGuard
+<http://www.isibang.ac.in/ns/codo#securityGuard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#securityGuard> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#hasRelationship> .
+<http://www.isibang.ac.in/ns/codo#securityGuard> <http://www.w3.org/2000/01/rdf-schema#comment> "A security guard of a person."@en .
+<http://www.isibang.ac.in/ns/codo#securityGuard> <http://www.w3.org/2000/01/rdf-schema#label> "security guard"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#stateWiseStatistics
+<http://www.isibang.ac.in/ns/codo#stateWiseStatistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#stateWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#hasStatistics> .
+<http://www.isibang.ac.in/ns/codo#stateWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/State> .
+<http://www.isibang.ac.in/ns/codo#stateWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.isibang.ac.in/ns/codo#StateWiseStatistics> .
+<http://www.isibang.ac.in/ns/codo#stateWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#comment> "A property to connect to the state (province) wise metrics related to the casualities of the disease."@en .
+<http://www.isibang.ac.in/ns/codo#stateWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#label> "state wise statistics"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#suspectedReasonOfCatchingCovid-19
+<http://www.isibang.ac.in/ns/codo#suspectedReasonOfCatchingCovid-19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#suspectedReasonOfCatchingCovid-19> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Patient> .
+<http://www.isibang.ac.in/ns/codo#suspectedReasonOfCatchingCovid-19> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.isibang.ac.in/ns/codo#ExposureToCOVID-19> .
+<http://www.isibang.ac.in/ns/codo#suspectedReasonOfCatchingCovid-19> <http://www.w3.org/2000/01/rdf-schema#comment> "The suspected reasons of catching covid-19 disease, for example, travel, attending a marriage anniversary, while treating a patient, infected famility member."@en .
+<http://www.isibang.ac.in/ns/codo#suspectedReasonOfCatchingCovid-19> <http://www.w3.org/2000/01/rdf-schema#label> "suspected reasons of catching covid-19"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#testedInClinic
+<http://www.isibang.ac.in/ns/codo#testedInClinic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#testedInClinic> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#TestResult> .
+<http://www.isibang.ac.in/ns/codo#testedInClinic> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/MedicalClinic> .
+# 
+# http://www.isibang.ac.in/ns/codo#travelHistory
+<http://www.isibang.ac.in/ns/codo#travelHistory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#travelHistory> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#travelHistory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Patient> .
+<http://www.isibang.ac.in/ns/codo#travelHistory> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/Place> .
+<http://www.isibang.ac.in/ns/codo#travelHistory> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic property to store the travel history of a patient."@en .
+<http://www.isibang.ac.in/ns/codo#travelHistory> <http://www.w3.org/2000/01/rdf-schema#label> "travel history"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#travelledFrom
+<http://www.isibang.ac.in/ns/codo#travelledFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#travelledFrom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#travelHistory> .
+<http://www.isibang.ac.in/ns/codo#travelledFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Patient> .
+<http://www.isibang.ac.in/ns/codo#travelledFrom> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/Place> .
+<http://www.isibang.ac.in/ns/codo#travelledFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "A suspected covid-19 patient travelled from a place, e.g., country/ state/ district."@en .
+<http://www.isibang.ac.in/ns/codo#travelledFrom> <http://www.w3.org/2000/01/rdf-schema#label> "travelled from"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#travelledTo
+<http://www.isibang.ac.in/ns/codo#travelledTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.isibang.ac.in/ns/codo#travelledTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#travelHistory> .
+<http://www.isibang.ac.in/ns/codo#travelledTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Patient> .
+<http://www.isibang.ac.in/ns/codo#travelledTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/Place> .
+<http://www.isibang.ac.in/ns/codo#travelledTo> <http://www.w3.org/2000/01/rdf-schema#comment> "A suspected covid-19 patient travelled to a place, e.g., country/ state/ district."@en .
+<http://www.isibang.ac.in/ns/codo#travelledTo> <http://www.w3.org/2000/01/rdf-schema#label> "travelled to"@en .
+# 
+# https://pending.schema.org/gender
+<https://pending.schema.org/gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://pending.schema.org/gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://pending.schema.org/gender> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<https://pending.schema.org/gender> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/GenderType> .
+<https://pending.schema.org/gender> <http://www.w3.org/2000/01/rdf-schema#comment> "Gender of a person."@en .
+<https://pending.schema.org/gender> <http://www.w3.org/2000/01/rdf-schema#label> "has gender"@en .
+# 
+# https://schema.org/nationality
+<https://schema.org/nationality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/nationality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<https://schema.org/nationality> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/Country> .
+<https://schema.org/nationality> <http://www.w3.org/2000/01/rdf-schema#comment> "Nationality of the person."@en .
+<https://schema.org/nationality> <http://www.w3.org/2000/01/rdf-schema#label> "nationality"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.isibang.ac.in/ns/codo#BP-diastolic
+<http://www.isibang.ac.in/ns/codo#BP-diastolic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#BP-diastolic> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.isibang.ac.in/ns/codo#BP-diastolic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.isibang.ac.in/ns/codo#BP-diastolic> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#VitalSigns> .
+<http://www.isibang.ac.in/ns/codo#BP-diastolic> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#BP-diastolic> <http://www.w3.org/2000/01/rdf-schema#label> "Blood Pressure (Distolic)"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#BP-systolic
+<http://www.isibang.ac.in/ns/codo#BP-systolic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#BP-systolic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.isibang.ac.in/ns/codo#BP-systolic> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#VitalSigns> .
+<http://www.isibang.ac.in/ns/codo#BP-systolic> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#BP-systolic> <http://www.w3.org/2000/01/rdf-schema#label> "Blood Pressure (Systolic)"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#SpO2
+<http://www.isibang.ac.in/ns/codo#SpO2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#SpO2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.isibang.ac.in/ns/codo#SpO2> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#VitalSigns> .
+<http://www.isibang.ac.in/ns/codo#SpO2> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#SpO2> <http://www.w3.org/2000/01/rdf-schema#comment> "The peripheral capillary oxygen saturation, an estimate (in %) of the amount of oxygen in the blood."@en .
+<http://www.isibang.ac.in/ns/codo#SpO2> <http://www.w3.org/2000/01/rdf-schema#label> "peripheral capillary oxygen saturation(SpO2)"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#acronym
+<http://www.isibang.ac.in/ns/codo#acronym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#acronym> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.isibang.ac.in/ns/codo#acronym> <http://www.w3.org/2000/01/rdf-schema#comment> "An acronym."@en .
+<http://www.isibang.ac.in/ns/codo#acronym> <http://www.w3.org/2000/01/rdf-schema#label> "acronym"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#active
+<http://www.isibang.ac.in/ns/codo#active> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#active> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#cases> .
+<http://www.isibang.ac.in/ns/codo#active> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#Statistics> .
+<http://www.isibang.ac.in/ns/codo#active> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#active> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of active covid cases."@en .
+<http://www.isibang.ac.in/ns/codo#active> <http://www.w3.org/2000/01/rdf-schema#label> "active"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#admittedOn
+<http://www.isibang.ac.in/ns/codo#admittedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#admittedOn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#date> .
+<http://www.isibang.ac.in/ns/codo#admittedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Patient> .
+<http://www.isibang.ac.in/ns/codo#admittedOn> <http://www.w3.org/2000/01/rdf-schema#comment> "A patient admitted on a particular day and time."@en .
+<http://www.isibang.ac.in/ns/codo#admittedOn> <http://www.w3.org/2000/01/rdf-schema#label> "admitted on"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#age
+<http://www.isibang.ac.in/ns/codo#age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.isibang.ac.in/ns/codo#age> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#age> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#age> <http://www.w3.org/2000/01/rdf-schema#comment> "An age of a person."@en .
+<http://www.isibang.ac.in/ns/codo#age> <http://www.w3.org/2000/01/rdf-schema#label> "age"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#area
+<http://www.isibang.ac.in/ns/codo#area> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#area> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.isibang.ac.in/ns/codo#area> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Place> .
+<http://www.isibang.ac.in/ns/codo#area> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.isibang.ac.in/ns/codo#area> <http://www.w3.org/2000/01/rdf-schema#comment> "Tthe extent of a 2-dimensional surface enclosed within a boundary (in sq. km.)."@en .
+<http://www.isibang.ac.in/ns/codo#area> <http://www.w3.org/2000/01/rdf-schema#label> "area"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#bedShortage
+<http://www.isibang.ac.in/ns/codo#bedShortage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#bedShortage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#resource> .
+<http://www.isibang.ac.in/ns/codo#bedShortage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#Statistics> .
+<http://www.isibang.ac.in/ns/codo#bedShortage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#bedShortage> <http://www.w3.org/2000/01/rdf-schema#comment> "no. of bed shortage."@en .
+<http://www.isibang.ac.in/ns/codo#bedShortage> <http://www.w3.org/2000/01/rdf-schema#label> "no. of bed shortage"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#bedsNeeded
+<http://www.isibang.ac.in/ns/codo#bedsNeeded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#bedsNeeded> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#resource> .
+<http://www.isibang.ac.in/ns/codo#bedsNeeded> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#Statistics> .
+<http://www.isibang.ac.in/ns/codo#bedsNeeded> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#bedsNeeded> <http://www.w3.org/2000/01/rdf-schema#comment> "no. of beds needed."@en .
+<http://www.isibang.ac.in/ns/codo#bedsNeeded> <http://www.w3.org/2000/01/rdf-schema#label> "no. of beds needed"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#cases
+<http://www.isibang.ac.in/ns/codo#cases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#cases> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#metrics> .
+<http://www.isibang.ac.in/ns/codo#cases> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#Statistics> .
+<http://www.isibang.ac.in/ns/codo#cases> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#cases> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of covid cases."@en .
+<http://www.isibang.ac.in/ns/codo#cases> <http://www.w3.org/2000/01/rdf-schema#label> "cases"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#countryCode
+<http://www.isibang.ac.in/ns/codo#countryCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#countryCode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Country> .
+<http://www.isibang.ac.in/ns/codo#countryCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.isibang.ac.in/ns/codo#countryCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The country code. Example, \"IND\" for India."@en .
+<http://www.isibang.ac.in/ns/codo#countryCode> <http://www.w3.org/2000/01/rdf-schema#label> "country code"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#covid-19caseOn
+<http://www.isibang.ac.in/ns/codo#covid-19caseOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#covid-19caseOn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#date> .
+<http://www.isibang.ac.in/ns/codo#covid-19caseOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#Statistics> .
+<http://www.isibang.ac.in/ns/codo#covid-19caseOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.isibang.ac.in/ns/codo#covid-19caseOn> <http://www.w3.org/2000/01/rdf-schema#comment> "covid-19 cases on a day"@en .
+<http://www.isibang.ac.in/ns/codo#covid-19caseOn> <http://www.w3.org/2000/01/rdf-schema#label> "covid-19 case on"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#currentStatus
+<http://www.isibang.ac.in/ns/codo#currentStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#currentStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Patient> .
+<http://www.isibang.ac.in/ns/codo#currentStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.isibang.ac.in/ns/codo#currentStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "The current status of the patient, for example: recovered, hospitalized, deceased."@en .
+<http://www.isibang.ac.in/ns/codo#currentStatus> <http://www.w3.org/2000/01/rdf-schema#label> "patient status"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#dailyIncreasedCases
+<http://www.isibang.ac.in/ns/codo#dailyIncreasedCases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#dailyIncreasedCases> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#cases> .
+<http://www.isibang.ac.in/ns/codo#dailyIncreasedCases> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#Statistics> .
+<http://www.isibang.ac.in/ns/codo#dailyIncreasedCases> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#dailyIncreasedCases> <http://www.w3.org/2000/01/rdf-schema#comment> "Total no,. of active cases in Date 2 - total no. of active cases in Date 1"@en .
+<http://www.isibang.ac.in/ns/codo#dailyIncreasedCases> <http://www.w3.org/2000/01/rdf-schema#label> "daily increased cases"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#date
+<http://www.isibang.ac.in/ns/codo#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#date> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.isibang.ac.in/ns/codo#date> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular day specified as the time something happens."@en .
+<http://www.isibang.ac.in/ns/codo#date> <http://www.w3.org/2000/01/rdf-schema#label> "date"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#deceased
+<http://www.isibang.ac.in/ns/codo#deceased> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#deceased> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#cases> .
+<http://www.isibang.ac.in/ns/codo#deceased> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#Statistics> .
+<http://www.isibang.ac.in/ns/codo#deceased> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#deceased> <http://www.w3.org/2000/01/rdf-schema#comment> "number of deceased covid-19 patients."@en .
+<http://www.isibang.ac.in/ns/codo#deceased> <http://www.w3.org/2000/01/rdf-schema#label> "deceased"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#diagnosedOn
+<http://www.isibang.ac.in/ns/codo#diagnosedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#diagnosedOn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#date> .
+<http://www.isibang.ac.in/ns/codo#diagnosedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#Diagnosis> .
+<http://www.isibang.ac.in/ns/codo#diagnosedOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.isibang.ac.in/ns/codo#diagnosedOn> <http://www.w3.org/2000/01/rdf-schema#comment> "The diagnosis took place on a day."@en .
+<http://www.isibang.ac.in/ns/codo#diagnosedOn> <http://www.w3.org/2000/01/rdf-schema#label> "diagnosed on"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#hadCovidTest
+<http://www.isibang.ac.in/ns/codo#hadCovidTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#hadCovidTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.isibang.ac.in/ns/codo#hadCovidTest> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#hadCovidTest> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.isibang.ac.in/ns/codo#heartRate
+<http://www.isibang.ac.in/ns/codo#heartRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#heartRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.isibang.ac.in/ns/codo#heartRate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#VitalSigns> .
+<http://www.isibang.ac.in/ns/codo#heartRate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#heartRate> <http://www.w3.org/2000/01/rdf-schema#comment> "The rate at which the heart beats; usually measured to obtain a quick evaluation of a person's health."@en .
+<http://www.isibang.ac.in/ns/codo#heartRate> <http://www.w3.org/2000/01/rdf-schema#label> "Heart rate"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#height
+<http://www.isibang.ac.in/ns/codo#height> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#height> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.isibang.ac.in/ns/codo#height> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#height> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.isibang.ac.in/ns/codo#height> <http://www.w3.org/2000/01/rdf-schema#label> "height"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#icuBedShortage
+<http://www.isibang.ac.in/ns/codo#icuBedShortage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#icuBedShortage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#resource> .
+<http://www.isibang.ac.in/ns/codo#icuBedShortage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#Statistics> .
+<http://www.isibang.ac.in/ns/codo#icuBedShortage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#icuBedShortage> <http://www.w3.org/2000/01/rdf-schema#comment> "no. of icu bed shortage."@en .
+<http://www.isibang.ac.in/ns/codo#icuBedShortage> <http://www.w3.org/2000/01/rdf-schema#label> "no. of icu bed shortage"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#icuBedsNeeded
+<http://www.isibang.ac.in/ns/codo#icuBedsNeeded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#icuBedsNeeded> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#resource> .
+<http://www.isibang.ac.in/ns/codo#icuBedsNeeded> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#Statistics> .
+<http://www.isibang.ac.in/ns/codo#icuBedsNeeded> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#icuBedsNeeded> <http://www.w3.org/2000/01/rdf-schema#comment> "no. of invasive ventilators needed."@en .
+<http://www.isibang.ac.in/ns/codo#icuBedsNeeded> <http://www.w3.org/2000/01/rdf-schema#label> "no. of icu beds needed"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#invasiveVentilatorsNeeded
+<http://www.isibang.ac.in/ns/codo#invasiveVentilatorsNeeded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#invasiveVentilatorsNeeded> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#resource> .
+<http://www.isibang.ac.in/ns/codo#invasiveVentilatorsNeeded> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#Statistics> .
+<http://www.isibang.ac.in/ns/codo#invasiveVentilatorsNeeded> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#invasiveVentilatorsNeeded> <http://www.w3.org/2000/01/rdf-schema#comment> "no. of invasive ventilators needed."@en .
+<http://www.isibang.ac.in/ns/codo#invasiveVentilatorsNeeded> <http://www.w3.org/2000/01/rdf-schema#label> "no. of invasive ventilators needed"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#metrics
+<http://www.isibang.ac.in/ns/codo#metrics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#metrics> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#Statistics> .
+<http://www.isibang.ac.in/ns/codo#metrics> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic property to store any metrics related to the covid-19 disease casualties and resources."@en .
+<http://www.isibang.ac.in/ns/codo#metrics> <http://www.w3.org/2000/01/rdf-schema#label> "metrics"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#noOfPeopleMigrated
+<http://www.isibang.ac.in/ns/codo#noOfPeopleMigrated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#noOfPeopleMigrated> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#cases> .
+<http://www.isibang.ac.in/ns/codo#noOfPeopleMigrated> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#Statistics> .
+<http://www.isibang.ac.in/ns/codo#noOfPeopleMigrated> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#noOfPeopleMigrated> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of people migrated after recovery from the covid."@en .
+<http://www.isibang.ac.in/ns/codo#noOfPeopleMigrated> <http://www.w3.org/2000/01/rdf-schema#comment> "number of people migrated"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#patientID
+<http://www.isibang.ac.in/ns/codo#patientID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#patientID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Patient> .
+<http://www.isibang.ac.in/ns/codo#patientID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.isibang.ac.in/ns/codo#patientID> <http://www.w3.org/2000/01/rdf-schema#comment> "The patient id"@en .
+<http://www.isibang.ac.in/ns/codo#patientID> <http://www.w3.org/2000/01/rdf-schema#label> "patient id"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#populationDensity
+<http://www.isibang.ac.in/ns/codo#populationDensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#populationDensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.isibang.ac.in/ns/codo#populationDensity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Place> .
+<http://www.isibang.ac.in/ns/codo#populationDensity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.isibang.ac.in/ns/codo#populationDensity> <http://www.w3.org/2000/01/rdf-schema#comment> "For humans, population density is the number of people per unit of area, usually quoted per square kilometre or square mile, and which may include or exclude for example areas of water or glaciers."@en .
+<http://www.isibang.ac.in/ns/codo#populationDensity> <http://www.w3.org/2000/01/rdf-schema#label> "population density"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#recovered
+<http://www.isibang.ac.in/ns/codo#recovered> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#recovered> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#cases> .
+<http://www.isibang.ac.in/ns/codo#recovered> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#Statistics> .
+<http://www.isibang.ac.in/ns/codo#recovered> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#recovered> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of people recovered from covid."@en .
+<http://www.isibang.ac.in/ns/codo#recovered> <http://www.w3.org/2000/01/rdf-schema#label> "recovered"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#releasedOn
+<http://www.isibang.ac.in/ns/codo#releasedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#releasedOn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#date> .
+<http://www.isibang.ac.in/ns/codo#releasedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Patient> .
+<http://www.isibang.ac.in/ns/codo#releasedOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.isibang.ac.in/ns/codo#releasedOn> <http://www.w3.org/2000/01/rdf-schema#comment> "The patient released on a day from a covid dedicated facility."@en .
+<http://www.isibang.ac.in/ns/codo#releasedOn> <http://www.w3.org/2000/01/rdf-schema#label> "released on"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#resource
+<http://www.isibang.ac.in/ns/codo#resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#resource> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#metrics> .
+<http://www.isibang.ac.in/ns/codo#resource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#Statistics> .
+<http://www.isibang.ac.in/ns/codo#resource> <http://www.w3.org/2000/01/rdf-schema#comment> "Available/ required resource for covid treatment."@en .
+<http://www.isibang.ac.in/ns/codo#resource> <http://www.w3.org/2000/01/rdf-schema#label> "resource"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#respiratoryRate
+<http://www.isibang.ac.in/ns/codo#respiratoryRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#respiratoryRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.isibang.ac.in/ns/codo#respiratoryRate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#VitalSigns> .
+<http://www.isibang.ac.in/ns/codo#respiratoryRate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#respiratoryRate> <http://www.w3.org/2000/01/rdf-schema#comment> "Is the number of breaths a person take per minute."@en .
+<http://www.isibang.ac.in/ns/codo#respiratoryRate> <http://www.w3.org/2000/01/rdf-schema#label> "repiratory rate"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#source
+<http://www.isibang.ac.in/ns/codo#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#source> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#Statistics> .
+<http://www.isibang.ac.in/ns/codo#source> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#anyURI> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.isibang.ac.in/ns/codo#source> <http://www.w3.org/2000/01/rdf-schema#comment> "The data source based on which the statistics produced."@en .
+# 
+# http://www.isibang.ac.in/ns/codo#stateCode
+<http://www.isibang.ac.in/ns/codo#stateCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#stateCode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/State> .
+<http://www.isibang.ac.in/ns/codo#stateCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.isibang.ac.in/ns/codo#stateCode> <http://www.w3.org/2000/01/rdf-schema#comment> "State (province) code. Example, \"KL\" of Kerala."@en .
+<http://www.isibang.ac.in/ns/codo#stateCode> <http://www.w3.org/2000/01/rdf-schema#label> "state code"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#temperature
+<http://www.isibang.ac.in/ns/codo#temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.isibang.ac.in/ns/codo#temperature> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#VitalSigns> .
+<http://www.isibang.ac.in/ns/codo#temperature> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.isibang.ac.in/ns/codo#temperature> <http://www.w3.org/2000/01/rdf-schema#comment> "The body temperature."@en .
+<http://www.isibang.ac.in/ns/codo#temperature> <http://www.w3.org/2000/01/rdf-schema#label> "temperature"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#testResultOn
+<http://www.isibang.ac.in/ns/codo#testResultOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#testResultOn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.isibang.ac.in/ns/codo#date> .
+<http://www.isibang.ac.in/ns/codo#testResultOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.isibang.ac.in/ns/codo#TestResult> .
+<http://www.isibang.ac.in/ns/codo#testResultOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.isibang.ac.in/ns/codo#testResultOn> <http://www.w3.org/2000/01/rdf-schema#comment> "The test result date."@en .
+<http://www.isibang.ac.in/ns/codo#testResultOn> <http://www.w3.org/2000/01/rdf-schema#label> "test result on"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#weight
+<http://www.isibang.ac.in/ns/codo#weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.isibang.ac.in/ns/codo#weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.isibang.ac.in/ns/codo#weight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#weight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.isibang.ac.in/ns/codo#weight> <http://www.w3.org/2000/01/rdf-schema#comment> "The weight."@en .
+<http://www.isibang.ac.in/ns/codo#weight> <http://www.w3.org/2000/01/rdf-schema#label> "weight"@en .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#comment> "A name for some thing."@en .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+# 
+# https://schema.org/address
+<https://schema.org/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid8 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Organization> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Person> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#comment> "Physical address of the item."@en .
+<https://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#label> "address"@en .
+# 
+# https://schema.org/addressLocality
+<https://schema.org/addressLocality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/addressLocality> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/address> .
+<https://schema.org/addressLocality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/addressLocality> <http://www.w3.org/2000/01/rdf-schema#comment> "The locality in which the street address is, and which is in the region. For example, BHEL Layout."@en .
+<https://schema.org/addressLocality> <http://www.w3.org/2000/01/rdf-schema#label> "address locality"@en .
+# 
+# https://schema.org/latitude
+<https://schema.org/latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/latitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Place> .
+<https://schema.org/latitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/latitude> <http://www.w3.org/2000/01/rdf-schema#comment> "The latitude of a location. For example 37.42242"@en .
+<https://schema.org/latitude> <http://www.w3.org/2000/01/rdf-schema#label> "latitude"@en .
+# 
+# https://schema.org/longitude
+<https://schema.org/longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/longitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Place> .
+<https://schema.org/longitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/longitude> <http://www.w3.org/2000/01/rdf-schema#comment> "The longitude of a location. For example -122.08585."@en .
+<https://schema.org/longitude> <http://www.w3.org/2000/01/rdf-schema#label> "longitude"@en .
+# 
+# https://schema.org/postalCode
+<https://schema.org/postalCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/address> .
+<https://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The postal code. For example, 560060"@en .
+<https://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#label> "postal code"@en .
+# 
+# https://schema.org/streetAddress
+<https://schema.org/streetAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/streetAddress> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/address> .
+<https://schema.org/streetAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/streetAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "The street address. For example, 1st Main, Muthurainagara."@en .
+<https://schema.org/streetAddress> <http://www.w3.org/2000/01/rdf-schema#label> "street address"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/SYMP_0000462
+<http://purl.obolibrary.org/obo/SYMP_0000462> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/SYMP_0000462> <http://www.w3.org/2002/07/owl#equivalentClass> <http://snomed.info/id/404684003> .
+<http://purl.obolibrary.org/obo/SYMP_0000462> <http://www.w3.org/2000/01/rdf-schema#comment> "A symptom is a perceived change in function, sensation, loss, disturbance or appearance reported by a patient indicative of a disease."@en .
+<http://purl.obolibrary.org/obo/SYMP_0000462> <http://www.w3.org/2000/01/rdf-schema#comment> "Source: https://www.mohfw.gov.in/pdf/FinalGuidanceonMangaementofCovidcasesversion2.pdf \n\nhttps://www.who.int/news-room/q-a-detail/q-a-coronaviruses"@en .
+<http://purl.obolibrary.org/obo/SYMP_0000462> <http://www.w3.org/2000/01/rdf-schema#label> "Symptom"@en .
+# 
+# http://schema.org/CovidTestingFacility
+<http://schema.org/CovidTestingFacility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/CovidTestingFacility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/MedicalClinic> .
+<http://schema.org/CovidTestingFacility> <http://www.w3.org/2000/01/rdf-schema#comment> "A Medical clinic where testing for the COVID-19 Coronavirus disease is available."@en .
+<http://schema.org/CovidTestingFacility> <http://www.w3.org/2000/01/rdf-schema#comment> "Covid testing facility"@en .
+# 
+# http://schema.org/MedicalClinic
+<http://schema.org/MedicalClinic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/MedicalClinic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+<http://schema.org/MedicalClinic> <http://www.w3.org/2000/01/rdf-schema#comment> "A facility, often associated with a hospital or medical school, that is devoted to the specific diagnosis and/or healthcare."@en .
+<http://schema.org/MedicalClinic> <http://www.w3.org/2000/01/rdf-schema#label> "Medical clinic"@en .
+# 
+# http://snomed.info/id/404684003
+<http://snomed.info/id/404684003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://snomed.info/id/404684003> <http://www.w3.org/2000/01/rdf-schema#label> "Clinical finding (finding)"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#COVID-19
+<http://www.isibang.ac.in/ns/codo#COVID-19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#COVID-19> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.isibang.ac.in/ns/codo#CoronavirusInfection> .
+<http://www.isibang.ac.in/ns/codo#COVID-19> <http://www.w3.org/2000/01/rdf-schema#comment> "A disease caused by severe acute respiratory syndrome coronavirus 2."@en .
+<http://www.isibang.ac.in/ns/codo#COVID-19> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 840539006"@en .
+<http://www.isibang.ac.in/ns/codo#COVID-19> <http://www.w3.org/2000/01/rdf-schema#label> "Disease caused by 2019 novel coronavirus"@en .
+<http://www.isibang.ac.in/ns/codo#COVID-19> <http://www.w3.org/2000/01/rdf-schema#label> "Disease caused by 2019-nCoV"@en .
+<http://www.isibang.ac.in/ns/codo#COVID-19> <http://www.w3.org/2000/01/rdf-schema#label> "Disease caused by severe acute respiratory syndrome coronavirus 2"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#COVID-19DedicatedFacility
+<http://www.isibang.ac.in/ns/codo#COVID-19DedicatedFacility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#COVID-19DedicatedFacility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+<http://www.isibang.ac.in/ns/codo#COVID-19DedicatedFacility> <http://www.w3.org/2000/01/rdf-schema#comment> "Any facility for providing care to COVID-19 patients."@en .
+<http://www.isibang.ac.in/ns/codo#COVID-19DedicatedFacility> <http://www.w3.org/2000/01/rdf-schema#comment> "source: https://www.mohfw.gov.in/pdf/FinalGuidanceonMangaementofCovidcasesversion2.pdf"@en .
+<http://www.isibang.ac.in/ns/codo#COVID-19DedicatedFacility> <http://www.w3.org/2000/01/rdf-schema#label> "COVID-19 dedicated facility"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#COVID-19Diagnosis
+<http://www.isibang.ac.in/ns/codo#COVID-19Diagnosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#COVID-19Diagnosis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.isibang.ac.in/ns/codo#Diagnosis> .
+<http://www.isibang.ac.in/ns/codo#COVID-19Diagnosis> <http://www.w3.org/2000/01/rdf-schema#comment> "The diagnosis as COVID-19 patient. \nThe diagnosied COVID-19 patients are categorised to three different categories/cases based on various clinical test and vital signs."@en .
+<http://www.isibang.ac.in/ns/codo#COVID-19Diagnosis> <http://www.w3.org/2000/01/rdf-schema#label> "COVID-19 Diagnosis"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#CloseContact
+<http://www.isibang.ac.in/ns/codo#CloseContact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#CloseContact> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.isibang.ac.in/ns/codo#ExposureToCOVID-19> .
+<http://www.isibang.ac.in/ns/codo#CloseContact> <http://www.w3.org/2000/01/rdf-schema#comment> "Close contact, a suspected cause for catching COVID-19."@en .
+<http://www.isibang.ac.in/ns/codo#CloseContact> <http://www.w3.org/2000/01/rdf-schema#label> "Close contact"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#CoronavirusInfection
+<http://www.isibang.ac.in/ns/codo#CoronavirusInfection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#CoronavirusInfection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.isibang.ac.in/ns/codo#DiseaseCausedByCoronaviridae> .
+<http://www.isibang.ac.in/ns/codo#CoronavirusInfection> <http://www.w3.org/2000/01/rdf-schema#comment> "Coronaviruses are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). (source: https://www.who.int/news-room/q-a-detail/q-a-coronaviruses)"@en .
+<http://www.isibang.ac.in/ns/codo#CoronavirusInfection> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 186747009"@en .
+<http://www.isibang.ac.in/ns/codo#CoronavirusInfection> <http://www.w3.org/2000/01/rdf-schema#label> "Coronavirus infection"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#CountryWiseStatistics
+<http://www.isibang.ac.in/ns/codo#CountryWiseStatistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#CountryWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.isibang.ac.in/ns/codo#Statistics> .
+<http://www.isibang.ac.in/ns/codo#CountryWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#label> "Country wise statistics"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#CovidCareCentre
+<http://www.isibang.ac.in/ns/codo#CovidCareCentre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#CovidCareCentre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.isibang.ac.in/ns/codo#COVID-19DedicatedFacility> .
+<http://www.isibang.ac.in/ns/codo#CovidCareCentre> <http://www.w3.org/2000/01/rdf-schema#comment> "Any facility, such as hotels/lodges/hostels/stadiums for providing care to COVID-19 patients are reffered as Covid Care Centre (CCC)."@en .
+<http://www.isibang.ac.in/ns/codo#CovidCareCentre> <http://www.w3.org/2000/01/rdf-schema#label> "Covid Care Centre (CCC)"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#DedicatedCovidHealthCentre
+<http://www.isibang.ac.in/ns/codo#DedicatedCovidHealthCentre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#DedicatedCovidHealthCentre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.isibang.ac.in/ns/codo#COVID-19DedicatedFacility> .
+<http://www.isibang.ac.in/ns/codo#DedicatedCovidHealthCentre> <http://www.w3.org/2000/01/rdf-schema#comment> "The Dedicated COVID Health Centre are hospitals that shall offer care for all cases that have been clinically assigned as moderate."@en .
+<http://www.isibang.ac.in/ns/codo#DedicatedCovidHealthCentre> <http://www.w3.org/2000/01/rdf-schema#label> "Dedicated Covid Health Centre (DCHC)"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#DedicatedCovidHospital
+<http://www.isibang.ac.in/ns/codo#DedicatedCovidHospital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#DedicatedCovidHospital> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.isibang.ac.in/ns/codo#COVID-19DedicatedFacility> .
+<http://www.isibang.ac.in/ns/codo#DedicatedCovidHospital> <http://www.w3.org/2000/01/rdf-schema#comment> "The Dedicated COVID Hospitals are hospitals that shall offer comprehensive care primarily for those who have been clinically assigned as severe."@en .
+<http://www.isibang.ac.in/ns/codo#DedicatedCovidHospital> <http://www.w3.org/2000/01/rdf-schema#label> "Dedicated Covid Hospital (DCH)"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#DiagnosedWithCovid
+<http://www.isibang.ac.in/ns/codo#DiagnosedWithCovid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#DiagnosedWithCovid> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Patient> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#hasDiagnosis> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.isibang.ac.in/ns/codo#COVID-19Diagnosis> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.isibang.ac.in/ns/codo#Diagnosis
+<http://www.isibang.ac.in/ns/codo#Diagnosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#Diagnosis> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 439401001"@en .
+<http://www.isibang.ac.in/ns/codo#Diagnosis> <http://www.w3.org/2000/01/rdf-schema#comment> "identifying the nature or cause of some phenomenon."@en .
+# 
+# http://www.isibang.ac.in/ns/codo#Disease
+<http://www.isibang.ac.in/ns/codo#Disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#Disease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://xmlns.com/foaf/0.1/name> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.isibang.ac.in/ns/codo#Disease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://xmlns.com/foaf/0.1/name> .
+_:genid16 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.isibang.ac.in/ns/codo#Disease> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 64572001"@en .
+<http://www.isibang.ac.in/ns/codo#Disease> <http://www.w3.org/2000/01/rdf-schema#comment> "an impairment of health or a condition of abnormal functioning."@en .
+<http://www.isibang.ac.in/ns/codo#Disease> <http://www.w3.org/2000/01/rdf-schema#label> "Disease"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#DiseaseCausedByCoronaviridae
+<http://www.isibang.ac.in/ns/codo#DiseaseCausedByCoronaviridae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#DiseaseCausedByCoronaviridae> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.isibang.ac.in/ns/codo#ViralDisease> .
+<http://www.isibang.ac.in/ns/codo#DiseaseCausedByCoronaviridae> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#covid-19ClinicalFacility> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://schema.org/CovidTestingFacility> .
+<http://www.isibang.ac.in/ns/codo#DiseaseCausedByCoronaviridae> <http://www.w3.org/2000/01/rdf-schema#comment> "A viral disease caused by coronavirus."@en .
+<http://www.isibang.ac.in/ns/codo#DiseaseCausedByCoronaviridae> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 27619001"@en .
+<http://www.isibang.ac.in/ns/codo#DiseaseCausedByCoronaviridae> <http://www.w3.org/2000/01/rdf-schema#label> "Disease caused by Coronaviridae"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#District
+<http://www.isibang.ac.in/ns/codo#District> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#District> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Place> .
+<http://www.isibang.ac.in/ns/codo#District> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#districtWiseStatistics> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.isibang.ac.in/ns/codo#DistrictWiseStatistics> .
+<http://www.isibang.ac.in/ns/codo#District> <http://www.w3.org/2000/01/rdf-schema#comment> "An adminidtrative area spanning regions or counties, several municipalities, subdivisions of municipalities, school district, or political district."@en .
+# 
+# http://www.isibang.ac.in/ns/codo#DistrictWiseStatistics
+<http://www.isibang.ac.in/ns/codo#DistrictWiseStatistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#DistrictWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.isibang.ac.in/ns/codo#Statistics> .
+<http://www.isibang.ac.in/ns/codo#DistrictWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#label> "District wise statistics"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#Doctor
+<http://www.isibang.ac.in/ns/codo#Doctor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#Doctor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#Doctor> <http://www.w3.org/2000/01/rdf-schema#comment> "A licensed medical practitioner."@en .
+<http://www.isibang.ac.in/ns/codo#Doctor> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 158965000"@en .
+<http://www.isibang.ac.in/ns/codo#Doctor> <http://www.w3.org/2000/01/rdf-schema#label> "Doctor"@en .
+<http://www.isibang.ac.in/ns/codo#Doctor> <http://www.w3.org/2000/01/rdf-schema#label> "Medical practitioner"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#ExposureToCOVID-19
+<http://www.isibang.ac.in/ns/codo#ExposureToCOVID-19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#ExposureToCOVID-19> <http://www.w3.org/2000/01/rdf-schema#comment> "Suspected causes of catching COVID-19."@en .
+<http://www.isibang.ac.in/ns/codo#ExposureToCOVID-19> <http://www.w3.org/2000/01/rdf-schema#label> "Exposure to COVID-19"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#Gathering
+<http://www.isibang.ac.in/ns/codo#Gathering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#Gathering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.isibang.ac.in/ns/codo#ExposureToCOVID-19> .
+<http://www.isibang.ac.in/ns/codo#Gathering> <http://www.w3.org/2000/01/rdf-schema#comment> "Mass gathering, a suspected cause for catching COVID-19."@en .
+<http://www.isibang.ac.in/ns/codo#Gathering> <http://www.w3.org/2000/01/rdf-schema#label> "Gathering"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#LaboratiryTestFinding
+<http://www.isibang.ac.in/ns/codo#LaboratiryTestFinding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#LaboratiryTestFinding> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid19 <http://www.w3.org/2002/07/owl#oneOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.isibang.ac.in/ns/codo#Negative> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.isibang.ac.in/ns/codo#Pending> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.isibang.ac.in/ns/codo#Positive> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.isibang.ac.in/ns/codo#LaboratiryTestFinding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.isibang.ac.in/ns/codo#TestResult> .
+<http://www.isibang.ac.in/ns/codo#LaboratiryTestFinding> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 118246004"@en .
+<http://www.isibang.ac.in/ns/codo#LaboratiryTestFinding> <http://www.w3.org/2000/01/rdf-schema#comment> "The laboratory test finding of the patient. The possible values are Positive, Negative, Pending."@en .
+<http://www.isibang.ac.in/ns/codo#LaboratiryTestFinding> <http://www.w3.org/2000/01/rdf-schema#label> "Laboratory test finding"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#Man
+<http://www.isibang.ac.in/ns/codo#Man> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#Man> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Person> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://pending.schema.org/gender> .
+_:genid25 <http://www.w3.org/2002/07/owl#hasValue> <http://www.isibang.ac.in/ns/codo#Male> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#Man> <http://www.w3.org/2000/01/rdf-schema#comment> "A man."@en .
+# 
+# http://www.isibang.ac.in/ns/codo#MildAndVeryMildCOVID-19
+<http://www.isibang.ac.in/ns/codo#MildAndVeryMildCOVID-19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#MildAndVeryMildCOVID-19> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.isibang.ac.in/ns/codo#COVID-19Diagnosis> .
+<http://www.isibang.ac.in/ns/codo#MildAndVeryMildCOVID-19> <http://www.w3.org/2000/01/rdf-schema#comment> "Cases presenting with fever and/or upper respiratory tract illness (Influenza\nLike Illness, ILI)."@en .
+<http://www.isibang.ac.in/ns/codo#MildAndVeryMildCOVID-19> <http://www.w3.org/2000/01/rdf-schema#label> "Mild and very mild COVID-19"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#ModerateCOVID-19
+<http://www.isibang.ac.in/ns/codo#ModerateCOVID-19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#ModerateCOVID-19> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.isibang.ac.in/ns/codo#COVID-19Diagnosis> .
+<http://www.isibang.ac.in/ns/codo#ModerateCOVID-19> <http://www.w3.org/2000/01/rdf-schema#comment> "Pneumonia with no signs of severe disease (Respiratory Rate 15 to 30/minute, SpO2 90%-94%)."@en .
+<http://www.isibang.ac.in/ns/codo#ModerateCOVID-19> <http://www.w3.org/2000/01/rdf-schema#label> "Moderate COVID-19"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#Nurse
+<http://www.isibang.ac.in/ns/codo#Nurse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#Nurse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#Nurse> <http://www.w3.org/2000/01/rdf-schema#comment> "A health professional skilled in caring for young children or the sick (usually under the supervision of a physician)."@en .
+<http://www.isibang.ac.in/ns/codo#Nurse> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 106292003"@en .
+<http://www.isibang.ac.in/ns/codo#Nurse> <http://www.w3.org/2000/01/rdf-schema#label> "Nurse"@en .
+<http://www.isibang.ac.in/ns/codo#Nurse> <http://www.w3.org/2000/01/rdf-schema#label> "Professional nurse"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#SevereCOVID-19
+<http://www.isibang.ac.in/ns/codo#SevereCOVID-19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#SevereCOVID-19> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.isibang.ac.in/ns/codo#COVID-19Diagnosis> .
+<http://www.isibang.ac.in/ns/codo#SevereCOVID-19> <http://www.w3.org/2000/01/rdf-schema#comment> "Severe Pneumonia (with respiratory rate ≥30/minute and/or SpO2 < 90% in room air) or ARDS or Septic shock."@en .
+<http://www.isibang.ac.in/ns/codo#SevereCOVID-19> <http://www.w3.org/2000/01/rdf-schema#label> "Severe COVID-19"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#StateWiseStatistics
+<http://www.isibang.ac.in/ns/codo#StateWiseStatistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#StateWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.isibang.ac.in/ns/codo#Statistics> .
+<http://www.isibang.ac.in/ns/codo#StateWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#label> "State wise statistics"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#Statistics
+<http://www.isibang.ac.in/ns/codo#Statistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#Statistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#active> .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#Statistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#bedShortage> .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#Statistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#bedsNeeded> .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#Statistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#cases> .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#Statistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#covid-19caseOn> .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.isibang.ac.in/ns/codo#Statistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#dailyIncreasedCases> .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#Statistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#deceased> .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#Statistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#icuBedShortage> .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#Statistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#icuBedsNeeded> .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#Statistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#invasiveVentilatorsNeeded> .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#Statistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#noOfPeopleMigrated> .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#Statistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#recovered> .
+_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#Statistics> <http://www.w3.org/2000/01/rdf-schema#comment> "Statistics based on each day."@en .
+<http://www.isibang.ac.in/ns/codo#Statistics> <http://www.w3.org/2000/01/rdf-schema#comment> "Statistics of COVID-19 cases which includes the deatils of active, recovered, deaths, and also the resources (e.g., beds required, shortage of beds, ICUs) on daily basis."@en .
+# 
+# http://www.isibang.ac.in/ns/codo#TestResult
+<http://www.isibang.ac.in/ns/codo#TestResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#TestResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#testedInClinic> .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://schema.org/MedicalClinic> .
+<http://www.isibang.ac.in/ns/codo#TestResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#testResultOn> .
+_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.isibang.ac.in/ns/codo#TestResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#testResultOn> .
+_:genid41 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.isibang.ac.in/ns/codo#TestResult> <http://www.w3.org/2000/01/rdf-schema#comment> "A test result."@en .
+<http://www.isibang.ac.in/ns/codo#TestResult> <http://www.w3.org/2000/01/rdf-schema#label> "Test result"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#UntestedForCovid
+<http://www.isibang.ac.in/ns/codo#UntestedForCovid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#UntestedForCovid> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid42 .
+_:genid42 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Person> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#hadCovidTest> .
+_:genid44 <http://www.w3.org/2002/07/owl#hasValue> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.isibang.ac.in/ns/codo#ViralDisease
+<http://www.isibang.ac.in/ns/codo#ViralDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#ViralDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/InfectiousDisease> .
+<http://www.isibang.ac.in/ns/codo#ViralDisease> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 34014006"@en .
+<http://www.isibang.ac.in/ns/codo#ViralDisease> <http://www.w3.org/2000/01/rdf-schema#label> "Viral disease"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#VitalSigns
+<http://www.isibang.ac.in/ns/codo#VitalSigns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#VitalSigns> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.isibang.ac.in/ns/codo#TestResult> .
+<http://www.isibang.ac.in/ns/codo#VitalSigns> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#BP-diastolic> .
+_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#VitalSigns> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#BP-systolic> .
+_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#VitalSigns> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#SpO2> .
+_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#VitalSigns> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#heartRate> .
+_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#VitalSigns> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#respiratoryRate> .
+_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#VitalSigns> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#temperature> .
+_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.isibang.ac.in/ns/codo#VitalSigns> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#BP-diastolic> .
+_:genid52 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid52 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#VitalSigns> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#BP-systolic> .
+_:genid53 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid53 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#VitalSigns> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#SpO2> .
+_:genid54 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid54 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#VitalSigns> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#heartRate> .
+_:genid55 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid55 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#VitalSigns> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#respiratoryRate> .
+_:genid56 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid56 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#VitalSigns> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#temperature> .
+_:genid57 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid57 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.isibang.ac.in/ns/codo#VitalSigns> <http://www.w3.org/2000/01/rdf-schema#comment> "The vital signs of a suspected covid-19 patient as found through clinical tests."@en .
+<http://www.isibang.ac.in/ns/codo#VitalSigns> <http://www.w3.org/2000/01/rdf-schema#label> "Vital signs"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#Woman
+<http://www.isibang.ac.in/ns/codo#Woman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#Woman> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid58 .
+_:genid58 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Person> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <https://pending.schema.org/gender> .
+_:genid60 <http://www.w3.org/2002/07/owl#hasValue> <http://www.isibang.ac.in/ns/codo#Female> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.isibang.ac.in/ns/codo#Woman> <http://www.w3.org/2000/01/rdf-schema#comment> "A women."@en .
+# 
+# http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent (eg. person, group, software or physical artifact)."@en .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent"@en .
+# 
+# http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#location> .
+_:genid62 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://schema.org/Place> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <https://schema.org/address> .
+_:genid63 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of people who work together."@en .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <https://schema.org/nationality> .
+_:genid64 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://schema.org/Place> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <https://schema.org/address> .
+_:genid65 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A human being."@en .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+# 
+# https://schema.org/Country
+<https://schema.org/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Place> .
+<https://schema.org/Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#countryWiseStatistics> .
+_:genid66 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.isibang.ac.in/ns/codo#CountryWiseStatistics> .
+<https://schema.org/Country> <http://www.w3.org/2000/01/rdf-schema#comment> "A country."@en .
+# 
+# https://schema.org/GenderType
+<https://schema.org/GenderType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/GenderType> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid67 <http://www.w3.org/2002/07/owl#oneOf> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.isibang.ac.in/ns/codo#Female> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.isibang.ac.in/ns/codo#Male> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://schema.org/GenderType> <http://www.w3.org/2000/01/rdf-schema#comment> "An enumeration of genders."@en .
+<https://schema.org/GenderType> <http://www.w3.org/2000/01/rdf-schema#label> "Gender type"@en .
+# 
+# https://schema.org/InfectiousDisease
+<https://schema.org/InfectiousDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/InfectiousDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.isibang.ac.in/ns/codo#Disease> .
+<https://schema.org/InfectiousDisease> <http://www.w3.org/2000/01/rdf-schema#comment> "An infectious disease is a clinically evident human disease resulting from the presence of pathogenic microbial agents, like pathogenic viruses, pathogenic bacteria, fungi, protozoa, multicellular parasites, and prions. To be considered an infectious disease, such pathogens are known to be able to cause this disease."@en .
+<https://schema.org/InfectiousDisease> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 40733004"@en .
+<https://schema.org/InfectiousDisease> <http://www.w3.org/2000/01/rdf-schema#label> "Infectious disease"@en .
+# 
+# https://schema.org/Patient
+<https://schema.org/Patient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<https://schema.org/Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#admittedIn> .
+_:genid70 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.isibang.ac.in/ns/codo#COVID-19DedicatedFacility> .
+<https://schema.org/Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#hasDiagnosis> .
+_:genid71 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.isibang.ac.in/ns/codo#Diagnosis> .
+<https://schema.org/Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#hasRelationship> .
+_:genid72 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://schema.org/Patient> .
+<https://schema.org/Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#hasSymptom> .
+_:genid73 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.org/obo/SYMP_0000462> .
+<https://schema.org/Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#laboratoryTestFinding> .
+_:genid74 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.isibang.ac.in/ns/codo#LaboratiryTestFinding> .
+<https://schema.org/Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#mostRecentTestResult> .
+_:genid75 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.isibang.ac.in/ns/codo#VitalSigns> .
+<https://schema.org/Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#suspectedReasonOfCatchingCovid-19> .
+_:genid76 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.isibang.ac.in/ns/codo#ExposureToCOVID-19> .
+<https://schema.org/Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#currentStatus> .
+_:genid77 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#patientID> .
+_:genid78 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#patientID> .
+_:genid79 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid79 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#currentStatus> .
+_:genid80 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid80 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/Patient> <http://www.w3.org/2000/01/rdf-schema#comment> "A patient is any person recipient of health care services."@en .
+<https://schema.org/Patient> <http://www.w3.org/2000/01/rdf-schema#comment> "Patients are categorised into three groups based on the following guidelines. \n\nSource: https://www.mohfw.gov.in/pdf/FinalGuidanceonMangaementofCovidcasesversion2.pdf"@en .
+<https://schema.org/Patient> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 116154003"@en .
+<https://schema.org/Patient> <http://www.w3.org/2000/01/rdf-schema#label> "Patient"@en .
+# 
+# https://schema.org/Place
+<https://schema.org/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <http://xmlns.com/foaf/0.1/name> .
+_:genid81 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <http://xmlns.com/foaf/0.1/name> .
+_:genid82 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid82 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#comment> "Entities that have a somewhat fixed, physical extension."@en .
+# 
+# https://schema.org/State
+<https://schema.org/State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Place> .
+<https://schema.org/State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <http://www.isibang.ac.in/ns/codo#stateWiseStatistics> .
+_:genid83 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.isibang.ac.in/ns/codo#StateWiseStatistics> .
+<https://schema.org/State> <http://www.w3.org/2000/01/rdf-schema#comment> "A state or province of a country."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.isibang.ac.in/ns/codo#AchesAndPains
+<http://www.isibang.ac.in/ns/codo#AchesAndPains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#AchesAndPains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SYMP_0000462> .
+<http://www.isibang.ac.in/ns/codo#AchesAndPains> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 82991003"@en .
+<http://www.isibang.ac.in/ns/codo#AchesAndPains> <http://www.w3.org/2000/01/rdf-schema#label> "Generalized aches and pains (finding)"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#Anniversary
+<http://www.isibang.ac.in/ns/codo#Anniversary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#Anniversary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#Gathering> .
+# 
+# http://www.isibang.ac.in/ns/codo#BengUrbanDistStat000001
+<http://www.isibang.ac.in/ns/codo#BengUrbanDistStat000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#BengUrbanDistStat000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#DistrictWiseStatistics> .
+<http://www.isibang.ac.in/ns/codo#BengUrbanDistStat000001> <http://www.isibang.ac.in/ns/codo#cases> "59"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.isibang.ac.in/ns/codo#BengUrbanDistStat000002
+<http://www.isibang.ac.in/ns/codo#BengUrbanDistStat000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#BengUrbanDistStat000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#DistrictWiseStatistics> .
+# 
+# http://www.isibang.ac.in/ns/codo#BengaluruUrban
+<http://www.isibang.ac.in/ns/codo#BengaluruUrban> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#BengaluruUrban> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#District> .
+<http://www.isibang.ac.in/ns/codo#BengaluruUrban> <http://www.isibang.ac.in/ns/codo#districtWiseStatistics> <http://www.isibang.ac.in/ns/codo#BengUrbanDistStat000001> .
+<http://www.isibang.ac.in/ns/codo#BengaluruUrban> <http://www.isibang.ac.in/ns/codo#districtWiseStatistics> <http://www.isibang.ac.in/ns/codo#BengUrbanDistStat000002> .
+<http://www.isibang.ac.in/ns/codo#BengaluruUrban> <http://www.isibang.ac.in/ns/codo#isPartOf> <http://www.isibang.ac.in/ns/codo#Karnataka> .
+# 
+# http://www.isibang.ac.in/ns/codo#Diarrhea
+<http://www.isibang.ac.in/ns/codo#Diarrhea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#Diarrhea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SYMP_0000462> .
+<http://www.isibang.ac.in/ns/codo#Diarrhea> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 62315008"@en .
+<http://www.isibang.ac.in/ns/codo#Diarrhea> <http://www.w3.org/2000/01/rdf-schema#label> "Diarrhea"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#DryCough
+<http://www.isibang.ac.in/ns/codo#DryCough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#DryCough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SYMP_0000462> .
+<http://www.isibang.ac.in/ns/codo#DryCough> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 11833005"@en .
+<http://www.isibang.ac.in/ns/codo#DryCough> <http://www.w3.org/2000/01/rdf-schema#label> "Dry cough"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#Female
+<http://www.isibang.ac.in/ns/codo#Female> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.isibang.ac.in/ns/codo#Fever
+<http://www.isibang.ac.in/ns/codo#Fever> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#Fever> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SYMP_0000462> .
+<http://www.isibang.ac.in/ns/codo#Fever> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 386661006"@en .
+<http://www.isibang.ac.in/ns/codo#Fever> <http://www.w3.org/2000/01/rdf-schema#label> "Fever"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#HackingCough
+<http://www.isibang.ac.in/ns/codo#HackingCough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#HackingCough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SYMP_0000462> .
+<http://www.isibang.ac.in/ns/codo#HackingCough> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTTID: 59994004"@en .
+<http://www.isibang.ac.in/ns/codo#HackingCough> <http://www.w3.org/2000/01/rdf-schema#label> "Hacking cough"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#India
+<http://www.isibang.ac.in/ns/codo#India> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#India> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Country> .
+<http://www.isibang.ac.in/ns/codo#India> <http://www.isibang.ac.in/ns/codo#countryWiseStatistics> <http://www.isibang.ac.in/ns/codo#IndiaStat000001> .
+<http://www.isibang.ac.in/ns/codo#India> <http://xmlns.com/foaf/0.1/name> "India" .
+# 
+# http://www.isibang.ac.in/ns/codo#IndiaStat000001
+<http://www.isibang.ac.in/ns/codo#IndiaStat000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#IndiaStat000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#CountryWiseStatistics> .
+<http://www.isibang.ac.in/ns/codo#IndiaStat000001> <http://www.isibang.ac.in/ns/codo#active> "14759"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#IndiaStat000001> <http://www.isibang.ac.in/ns/codo#cases> "18601"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#IndiaStat000001> <http://www.isibang.ac.in/ns/codo#deceased> "590"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#IndiaStat000001> <http://www.isibang.ac.in/ns/codo#recovered> "3252"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.isibang.ac.in/ns/codo#InfectedCo-passenger
+<http://www.isibang.ac.in/ns/codo#InfectedCo-passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#InfectedCo-passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#CloseContact> .
+# 
+# http://www.isibang.ac.in/ns/codo#InfectedFamilyMember
+<http://www.isibang.ac.in/ns/codo#InfectedFamilyMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#InfectedFamilyMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#CloseContact> .
+# 
+# http://www.isibang.ac.in/ns/codo#Karnataka
+<http://www.isibang.ac.in/ns/codo#Karnataka> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#Karnataka> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/State> .
+<http://www.isibang.ac.in/ns/codo#Karnataka> <http://www.isibang.ac.in/ns/codo#isPartOf> <http://www.isibang.ac.in/ns/codo#India> .
+<http://www.isibang.ac.in/ns/codo#Karnataka> <http://www.isibang.ac.in/ns/codo#stateWiseStatistics> <http://www.isibang.ac.in/ns/codo#karntStateStat000001> .
+<http://www.isibang.ac.in/ns/codo#Karnataka> <http://www.isibang.ac.in/ns/codo#stateWiseStatistics> <http://www.isibang.ac.in/ns/codo#karntStateStat000002> .
+<http://www.isibang.ac.in/ns/codo#Karnataka> <http://xmlns.com/foaf/0.1/name> "Karnataka" .
+# 
+# http://www.isibang.ac.in/ns/codo#Male
+<http://www.isibang.ac.in/ns/codo#Male> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.isibang.ac.in/ns/codo#NasalCongestion
+<http://www.isibang.ac.in/ns/codo#NasalCongestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#NasalCongestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SYMP_0000462> .
+<http://www.isibang.ac.in/ns/codo#NasalCongestion> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 68235000"@en .
+<http://www.isibang.ac.in/ns/codo#NasalCongestion> <http://www.w3.org/2000/01/rdf-schema#label> "Nasal congestion"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#Negative
+<http://www.isibang.ac.in/ns/codo#Negative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.isibang.ac.in/ns/codo#P000001-Vitals1
+<http://www.isibang.ac.in/ns/codo#P000001-Vitals1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#P000001-Vitals1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#VitalSigns> .
+<http://www.isibang.ac.in/ns/codo#P000001-Vitals1> <http://www.isibang.ac.in/ns/codo#heartRate> "120"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#P000001-Vitals1> <http://www.isibang.ac.in/ns/codo#respiratoryRate> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.isibang.ac.in/ns/codo#P000001Diagnosis
+<http://www.isibang.ac.in/ns/codo#P000001Diagnosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#P000001Diagnosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#Diagnosis> .
+# 
+# http://www.isibang.ac.in/ns/codo#P000002-Vitals1
+<http://www.isibang.ac.in/ns/codo#P000002-Vitals1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#P000002-Vitals1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#VitalSigns> .
+<http://www.isibang.ac.in/ns/codo#P000002-Vitals1> <http://www.isibang.ac.in/ns/codo#respiratoryRate> "15"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#P000002-Vitals1> <http://www.isibang.ac.in/ns/codo#testResultOn> "2020-04-26T09:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.isibang.ac.in/ns/codo#P000002Diagnosis
+<http://www.isibang.ac.in/ns/codo#P000002Diagnosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#P000002Diagnosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#Diagnosis> .
+# 
+# http://www.isibang.ac.in/ns/codo#P000003-Vitals1
+<http://www.isibang.ac.in/ns/codo#P000003-Vitals1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#P000003-Vitals1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#VitalSigns> .
+<http://www.isibang.ac.in/ns/codo#P000003-Vitals1> <http://www.isibang.ac.in/ns/codo#SpO2> "90"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#P000003-Vitals1> <http://www.isibang.ac.in/ns/codo#respiratoryRate> "35"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#P000003-Vitals1> <http://www.isibang.ac.in/ns/codo#testResultOn> "2020-04-21T10:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.isibang.ac.in/ns/codo#P000003-Vitals2
+<http://www.isibang.ac.in/ns/codo#P000003-Vitals2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#P000003-Vitals2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#VitalSigns> .
+<http://www.isibang.ac.in/ns/codo#P000003-Vitals2> <http://www.isibang.ac.in/ns/codo#previousTestResult> <http://www.isibang.ac.in/ns/codo#P000003-Vitals1> .
+<http://www.isibang.ac.in/ns/codo#P000003-Vitals2> <http://www.isibang.ac.in/ns/codo#testResultOn> "2020-04-22T10:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.isibang.ac.in/ns/codo#P000003-Vitals3
+<http://www.isibang.ac.in/ns/codo#P000003-Vitals3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#P000003-Vitals3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#VitalSigns> .
+<http://www.isibang.ac.in/ns/codo#P000003-Vitals3> <http://www.isibang.ac.in/ns/codo#previousTestResult> <http://www.isibang.ac.in/ns/codo#P000003-Vitals2> .
+<http://www.isibang.ac.in/ns/codo#P000003-Vitals3> <http://www.isibang.ac.in/ns/codo#testResultOn> "2020-04-23T11:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.isibang.ac.in/ns/codo#P000003-Vitals4
+<http://www.isibang.ac.in/ns/codo#P000003-Vitals4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#P000003-Vitals4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#VitalSigns> .
+<http://www.isibang.ac.in/ns/codo#P000003-Vitals4> <http://www.isibang.ac.in/ns/codo#previousTestResult> <http://www.isibang.ac.in/ns/codo#P000003-Vitals3> .
+<http://www.isibang.ac.in/ns/codo#P000003-Vitals4> <http://www.isibang.ac.in/ns/codo#SpO2> "90"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#P000003-Vitals4> <http://www.isibang.ac.in/ns/codo#respiratoryRate> "35"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#P000003-Vitals4> <http://www.isibang.ac.in/ns/codo#testResultOn> "2020-04-26T08:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.isibang.ac.in/ns/codo#P000003Diagnosis
+<http://www.isibang.ac.in/ns/codo#P000003Diagnosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#P000003Diagnosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#Diagnosis> .
+# 
+# http://www.isibang.ac.in/ns/codo#Pain
+<http://www.isibang.ac.in/ns/codo#Pain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#Pain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SYMP_0000462> .
+<http://www.isibang.ac.in/ns/codo#Pain> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 22253000"@en .
+<http://www.isibang.ac.in/ns/codo#Pain> <http://www.w3.org/2000/01/rdf-schema#label> "Pain"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#PainInThroat
+<http://www.isibang.ac.in/ns/codo#PainInThroat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#PainInThroat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SYMP_0000462> .
+<http://www.isibang.ac.in/ns/codo#PainInThroat> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 162397003"@en .
+<http://www.isibang.ac.in/ns/codo#PainInThroat> <http://www.w3.org/2000/01/rdf-schema#label> "Pain in throat"@en .
+<http://www.isibang.ac.in/ns/codo#PainInThroat> <http://www.w3.org/2000/01/rdf-schema#label> "Sore throat"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#Pending
+<http://www.isibang.ac.in/ns/codo#Pending> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.isibang.ac.in/ns/codo#Pneumonia
+<http://www.isibang.ac.in/ns/codo#Pneumonia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#Pneumonia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SYMP_0000462> .
+# 
+# http://www.isibang.ac.in/ns/codo#Positive
+<http://www.isibang.ac.in/ns/codo#Positive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.isibang.ac.in/ns/codo#ReligiousGathering
+<http://www.isibang.ac.in/ns/codo#ReligiousGathering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#ReligiousGathering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#Gathering> .
+# 
+# http://www.isibang.ac.in/ns/codo#RunnyNose
+<http://www.isibang.ac.in/ns/codo#RunnyNose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#RunnyNose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SYMP_0000462> .
+<http://www.isibang.ac.in/ns/codo#RunnyNose> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 267101005"@en .
+<http://www.isibang.ac.in/ns/codo#RunnyNose> <http://www.w3.org/2000/01/rdf-schema#label> "Nasal discharge presen"@en .
+<http://www.isibang.ac.in/ns/codo#RunnyNose> <http://www.w3.org/2000/01/rdf-schema#label> "Nose dripping"@en .
+<http://www.isibang.ac.in/ns/codo#RunnyNose> <http://www.w3.org/2000/01/rdf-schema#label> "Nose running"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#SeverePneumonia
+<http://www.isibang.ac.in/ns/codo#SeverePneumonia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#SeverePneumonia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SYMP_0000462> .
+# 
+# http://www.isibang.ac.in/ns/codo#Sneezing
+<http://www.isibang.ac.in/ns/codo#Sneezing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#Sneezing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SYMP_0000462> .
+<http://www.isibang.ac.in/ns/codo#Sneezing> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 76067001"@en .
+<http://www.isibang.ac.in/ns/codo#Sneezing> <http://www.w3.org/2000/01/rdf-schema#label> "Sneezing"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#Tired
+<http://www.isibang.ac.in/ns/codo#Tired> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#Tired> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SYMP_0000462> .
+<http://www.isibang.ac.in/ns/codo#Tired> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 224960004"@en .
+<http://www.isibang.ac.in/ns/codo#Tired> <http://www.w3.org/2000/01/rdf-schema#label> "Feeling tired"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#UP
+<http://www.isibang.ac.in/ns/codo#UP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#UP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/State> .
+<http://www.isibang.ac.in/ns/codo#UP> <http://www.isibang.ac.in/ns/codo#isPartOf> <http://www.isibang.ac.in/ns/codo#India> .
+<http://www.isibang.ac.in/ns/codo#UP> <http://www.isibang.ac.in/ns/codo#stateWiseStatistics> <http://www.isibang.ac.in/ns/codo#upStatState000001> .
+<http://www.isibang.ac.in/ns/codo#UP> <http://www.isibang.ac.in/ns/codo#stateWiseStatistics> <http://www.isibang.ac.in/ns/codo#upStatState000002> .
+<http://www.isibang.ac.in/ns/codo#UP> <http://xmlns.com/foaf/0.1/name> "Uttar Pradesh" .
+# 
+# http://www.isibang.ac.in/ns/codo#URTI
+<http://www.isibang.ac.in/ns/codo#URTI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#URTI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SYMP_0000462> .
+<http://www.isibang.ac.in/ns/codo#URTI> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 54150009"@en .
+<http://www.isibang.ac.in/ns/codo#URTI> <http://www.w3.org/2000/01/rdf-schema#label> "URTI"@en .
+<http://www.isibang.ac.in/ns/codo#URTI> <http://www.w3.org/2000/01/rdf-schema#label> "Upper Respiratory Tract Infection"@en .
+# 
+# http://www.isibang.ac.in/ns/codo#closeExplosureToCovid-19Patient
+<http://www.isibang.ac.in/ns/codo#closeExplosureToCovid-19Patient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#closeExplosureToCovid-19Patient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#CloseContact> .
+# 
+# http://www.isibang.ac.in/ns/codo#covid-19
+<http://www.isibang.ac.in/ns/codo#covid-19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#covid-19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#COVID-19> .
+<http://www.isibang.ac.in/ns/codo#covid-19> <http://www.isibang.ac.in/ns/codo#location> <http://www.isibang.ac.in/ns/codo#BengaluruUrban> .
+<http://www.isibang.ac.in/ns/codo#covid-19> <http://www.isibang.ac.in/ns/codo#location> <http://www.isibang.ac.in/ns/codo#India> .
+<http://www.isibang.ac.in/ns/codo#covid-19> <http://www.isibang.ac.in/ns/codo#location> <http://www.isibang.ac.in/ns/codo#Karnataka> .
+<http://www.isibang.ac.in/ns/codo#covid-19> <http://www.isibang.ac.in/ns/codo#location> <http://www.isibang.ac.in/ns/codo#UP> .
+# 
+# http://www.isibang.ac.in/ns/codo#karntStateStat000001
+<http://www.isibang.ac.in/ns/codo#karntStateStat000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#karntStateStat000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#StateWiseStatistics> .
+<http://www.isibang.ac.in/ns/codo#karntStateStat000001> <http://www.isibang.ac.in/ns/codo#cases> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.isibang.ac.in/ns/codo#karntStateStat000002
+<http://www.isibang.ac.in/ns/codo#karntStateStat000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#karntStateStat000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#StateWiseStatistics> .
+<http://www.isibang.ac.in/ns/codo#karntStateStat000002> <http://www.isibang.ac.in/ns/codo#cases> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.isibang.ac.in/ns/codo#p000001
+<http://www.isibang.ac.in/ns/codo#p000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#p000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#p000001> <http://www.isibang.ac.in/ns/codo#hasBrother> <http://www.isibang.ac.in/ns/codo#p000005> .
+<http://www.isibang.ac.in/ns/codo#p000001> <http://www.isibang.ac.in/ns/codo#hasDaughter> <http://www.isibang.ac.in/ns/codo#p000007> .
+<http://www.isibang.ac.in/ns/codo#p000001> <http://www.isibang.ac.in/ns/codo#hasDiagnosis> <http://www.isibang.ac.in/ns/codo#P000001Diagnosis> .
+<http://www.isibang.ac.in/ns/codo#p000001> <http://www.isibang.ac.in/ns/codo#hasSon> <http://www.isibang.ac.in/ns/codo#p000006> .
+<http://www.isibang.ac.in/ns/codo#p000001> <http://www.isibang.ac.in/ns/codo#hasSymptom> <http://www.isibang.ac.in/ns/codo#Fever> .
+<http://www.isibang.ac.in/ns/codo#p000001> <http://www.isibang.ac.in/ns/codo#hasSymptom> <http://www.isibang.ac.in/ns/codo#URTI> .
+<http://www.isibang.ac.in/ns/codo#p000001> <http://www.isibang.ac.in/ns/codo#hasWife> <http://www.isibang.ac.in/ns/codo#p000004> .
+<http://www.isibang.ac.in/ns/codo#p000001> <http://www.isibang.ac.in/ns/codo#mostRecentTestResult> <http://www.isibang.ac.in/ns/codo#P000001-Vitals1> .
+<http://www.isibang.ac.in/ns/codo#p000001> <https://pending.schema.org/gender> <http://www.isibang.ac.in/ns/codo#Male> .
+<http://www.isibang.ac.in/ns/codo#p000001> <http://www.isibang.ac.in/ns/codo#hadCovidTest> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.isibang.ac.in/ns/codo#p000002
+<http://www.isibang.ac.in/ns/codo#p000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#p000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#p000002> <http://www.isibang.ac.in/ns/codo#co-worker> <http://www.isibang.ac.in/ns/codo#p000008> .
+<http://www.isibang.ac.in/ns/codo#p000002> <http://www.isibang.ac.in/ns/codo#hasDiagnosis> <http://www.isibang.ac.in/ns/codo#P000002Diagnosis> .
+<http://www.isibang.ac.in/ns/codo#p000002> <http://www.isibang.ac.in/ns/codo#hasSymptom> <http://www.isibang.ac.in/ns/codo#Pneumonia> .
+<http://www.isibang.ac.in/ns/codo#p000002> <http://www.isibang.ac.in/ns/codo#hasWife> <http://www.isibang.ac.in/ns/codo#p000003> .
+<http://www.isibang.ac.in/ns/codo#p000002> <http://www.isibang.ac.in/ns/codo#mostRecentTestResult> <http://www.isibang.ac.in/ns/codo#P000002-Vitals1> .
+<http://www.isibang.ac.in/ns/codo#p000002> <http://www.isibang.ac.in/ns/codo#hadCovidTest> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.isibang.ac.in/ns/codo#p000003
+<http://www.isibang.ac.in/ns/codo#p000003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#p000003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#p000003> <http://www.isibang.ac.in/ns/codo#co-worker> <http://www.isibang.ac.in/ns/codo#p000009> .
+<http://www.isibang.ac.in/ns/codo#p000003> <http://www.isibang.ac.in/ns/codo#co-worker> <http://www.isibang.ac.in/ns/codo#p000010> .
+<http://www.isibang.ac.in/ns/codo#p000003> <http://www.isibang.ac.in/ns/codo#co-worker> <http://www.isibang.ac.in/ns/codo#p000011> .
+<http://www.isibang.ac.in/ns/codo#p000003> <http://www.isibang.ac.in/ns/codo#co-worker> <http://www.isibang.ac.in/ns/codo#p000012> .
+<http://www.isibang.ac.in/ns/codo#p000003> <http://www.isibang.ac.in/ns/codo#hasDiagnosis> <http://www.isibang.ac.in/ns/codo#P000003Diagnosis> .
+<http://www.isibang.ac.in/ns/codo#p000003> <http://www.isibang.ac.in/ns/codo#hasSymptom> <http://www.isibang.ac.in/ns/codo#SeverePneumonia> .
+<http://www.isibang.ac.in/ns/codo#p000003> <http://www.isibang.ac.in/ns/codo#hasTestResult> <http://www.isibang.ac.in/ns/codo#P000003-Vitals1> .
+<http://www.isibang.ac.in/ns/codo#p000003> <http://www.isibang.ac.in/ns/codo#hasTestResult> <http://www.isibang.ac.in/ns/codo#P000003-Vitals2> .
+<http://www.isibang.ac.in/ns/codo#p000003> <http://www.isibang.ac.in/ns/codo#hasTestResult> <http://www.isibang.ac.in/ns/codo#P000003-Vitals3> .
+<http://www.isibang.ac.in/ns/codo#p000003> <http://www.isibang.ac.in/ns/codo#mostRecentTestResult> <http://www.isibang.ac.in/ns/codo#P000003-Vitals4> .
+<http://www.isibang.ac.in/ns/codo#p000003> <http://www.isibang.ac.in/ns/codo#hadCovidTest> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.isibang.ac.in/ns/codo#p000004
+<http://www.isibang.ac.in/ns/codo#p000004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#p000004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#p000004> <http://www.isibang.ac.in/ns/codo#hasDaughter> <http://www.isibang.ac.in/ns/codo#p000007> .
+<http://www.isibang.ac.in/ns/codo#p000004> <http://www.isibang.ac.in/ns/codo#hasSon> <http://www.isibang.ac.in/ns/codo#p000006> .
+<http://www.isibang.ac.in/ns/codo#p000004> <http://www.isibang.ac.in/ns/codo#hadCovidTest> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.isibang.ac.in/ns/codo#p000005
+<http://www.isibang.ac.in/ns/codo#p000005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#p000005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#p000005> <http://www.isibang.ac.in/ns/codo#hadCovidTest> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.isibang.ac.in/ns/codo#p000006
+<http://www.isibang.ac.in/ns/codo#p000006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#p000006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#p000006> <http://www.isibang.ac.in/ns/codo#hadCovidTest> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.isibang.ac.in/ns/codo#p000007
+<http://www.isibang.ac.in/ns/codo#p000007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#p000007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#p000007> <http://www.isibang.ac.in/ns/codo#hadCovidTest> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.isibang.ac.in/ns/codo#p000008
+<http://www.isibang.ac.in/ns/codo#p000008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#p000008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#Woman> .
+<http://www.isibang.ac.in/ns/codo#p000008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#p000008> <http://www.isibang.ac.in/ns/codo#hadCovidTest> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.isibang.ac.in/ns/codo#p000009
+<http://www.isibang.ac.in/ns/codo#p000009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#p000009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#p000009> <http://www.isibang.ac.in/ns/codo#hadCovidTest> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.isibang.ac.in/ns/codo#p000010
+<http://www.isibang.ac.in/ns/codo#p000010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#p000010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#p000010> <http://www.isibang.ac.in/ns/codo#hadCovidTest> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.isibang.ac.in/ns/codo#p000011
+<http://www.isibang.ac.in/ns/codo#p000011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#p000011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#p000011> <http://www.isibang.ac.in/ns/codo#hadCovidTest> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.isibang.ac.in/ns/codo#p000012
+<http://www.isibang.ac.in/ns/codo#p000012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#p000012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.isibang.ac.in/ns/codo#p000012> <http://www.isibang.ac.in/ns/codo#hadCovidTest> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.isibang.ac.in/ns/codo#upStatState000001
+<http://www.isibang.ac.in/ns/codo#upStatState000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#upStatState000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#StateWiseStatistics> .
+<http://www.isibang.ac.in/ns/codo#upStatState000001> <http://www.isibang.ac.in/ns/codo#cases> "15"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.isibang.ac.in/ns/codo#upStatState000001> <http://xmlns.com/foaf/0.1/name> "Bengalure Urban" .
+# 
+# http://www.isibang.ac.in/ns/codo#upStatState000002
+<http://www.isibang.ac.in/ns/codo#upStatState000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.isibang.ac.in/ns/codo#upStatState000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.isibang.ac.in/ns/codo#StateWiseStatistics> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<http://www.isibang.ac.in/ns/codo#p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.isibang.ac.in/ns/codo#b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.isibang.ac.in/ns/codo#c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.isibang.ac.in/ns/codo#s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.isibang.ac.in/ns/covid19#p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.isibang.ac.in/ns/covid19#d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.isibang.ac.in/ns/covid19#r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.isibang.ac.in/ns/covid19#tr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.isibang.ac.in/ns/covid19#sp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid104 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid104 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid104 <http://www.w3.org/2000/01/rdf-schema#label> "Aunt Rule" .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid104 <http://www.w3.org/2003/11/swrl#body> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid107 .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid107 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#hasSister> .
+_:genid107 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/codo#p> .
+_:genid107 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/codo#s> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid2147483848 .
+_:genid2147483848 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid2147483848 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#hasChild> .
+_:genid2147483848 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/codo#p> .
+_:genid2147483848 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/codo#c> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid104 <http://www.w3.org/2003/11/swrl#head> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid109 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#hasAunt> .
+_:genid109 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/codo#c> .
+_:genid109 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/codo#s> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid110 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid110 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid110 <http://www.w3.org/2000/01/rdf-schema#label> "Moderate Covid19 Diagnostic Rule" .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid110 <http://www.w3.org/2003/11/swrl#body> _:genid121 .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid2147483853 .
+_:genid2147483853 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid2147483853 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#hasDiagnosis> .
+_:genid2147483853 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/covid19#p> .
+_:genid2147483853 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/covid19#d> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid119 .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid120 .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid120 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#hasSymptom> .
+_:genid120 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/covid19#p> .
+_:genid120 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/codo#Pneumonia> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid115 .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid116 .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid116 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid116 <http://www.w3.org/2003/11/swrl#arguments> _:genid118 .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.isibang.ac.in/ns/covid19#r> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "15"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid113 .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid2147483851 .
+_:genid2147483851 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid2147483851 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#respiratoryRate> .
+_:genid2147483851 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/covid19#tr> .
+_:genid2147483851 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/covid19#r> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid111 .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid2147483849 .
+_:genid2147483849 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid2147483849 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#mostRecentTestResult> .
+_:genid2147483849 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/covid19#p> .
+_:genid2147483849 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/covid19#tr> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid110 <http://www.w3.org/2003/11/swrl#head> _:genid123 .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid124 .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid124 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.isibang.ac.in/ns/codo#ModerateCOVID-19> .
+_:genid124 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/covid19#d> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid125 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid125 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid125 <http://www.w3.org/2000/01/rdf-schema#label> "Mild and Very Mild Covid19 Diagnostic Rule" .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid125 <http://www.w3.org/2003/11/swrl#body> _:genid130 .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid2147483854 .
+_:genid2147483854 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid2147483854 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#hasDiagnosis> .
+_:genid2147483854 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/covid19#p> .
+_:genid2147483854 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/covid19#d> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid128 .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid129 .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid129 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#hasSymptom> .
+_:genid129 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/covid19#p> .
+_:genid129 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/codo#URTI> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid126 .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid127 .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid127 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#hasSymptom> .
+_:genid127 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/covid19#p> .
+_:genid127 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/codo#Fever> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid125 <http://www.w3.org/2003/11/swrl#head> _:genid131 .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid132 .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid132 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.isibang.ac.in/ns/codo#MildAndVeryMildCOVID-19> .
+_:genid132 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/covid19#d> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid133 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid133 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid133 <http://www.w3.org/2000/01/rdf-schema#label> "Severe Covid19 Diagnostic Rule" .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid133 <http://www.w3.org/2003/11/swrl#body> _:genid150 .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid2147483855 .
+_:genid2147483855 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid2147483855 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#hasDiagnosis> .
+_:genid2147483855 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/covid19#p> .
+_:genid2147483855 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/covid19#d> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid148 .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid149 .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid149 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#SpO2> .
+_:genid149 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/covid19#tr> .
+_:genid149 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/covid19#sp> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid146 .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid147 .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid147 <http://www.w3.org/2003/11/swrl#classPredicate> <http://xmlns.com/foaf/0.1/Person> .
+_:genid147 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/covid19#p> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid144 .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid145 .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid145 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#hasSymptom> .
+_:genid145 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/covid19#p> .
+_:genid145 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/codo#SeverePneumonia> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid143 .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid2147483852 .
+_:genid2147483852 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid2147483852 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#respiratoryRate> .
+_:genid2147483852 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/covid19#tr> .
+_:genid2147483852 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/covid19#r> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid139 .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid140 .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid140 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+_:genid140 <http://www.w3.org/2003/11/swrl#arguments> _:genid142 .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.isibang.ac.in/ns/covid19#r> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid141 .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "30"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid138 .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid2147483850 .
+_:genid2147483850 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid2147483850 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#mostRecentTestResult> .
+_:genid2147483850 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/covid19#p> .
+_:genid2147483850 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/covid19#tr> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid134 .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid135 .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid135 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+_:genid135 <http://www.w3.org/2003/11/swrl#arguments> _:genid137 .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.isibang.ac.in/ns/covid19#sp> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid136 .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "90"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid133 <http://www.w3.org/2003/11/swrl#head> _:genid151 .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid152 .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid152 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.isibang.ac.in/ns/codo#SevereCOVID-19> .
+_:genid152 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/covid19#d> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid84 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid84 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid84 <http://www.w3.org/2000/01/rdf-schema#label> "Uncle Rule" .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid84 <http://www.w3.org/2003/11/swrl#body> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid88 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#hasBrother> .
+_:genid88 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/codo#p> .
+_:genid88 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/codo#b> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid2147483847 .
+_:genid2147483847 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid2147483847 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#hasChild> .
+_:genid2147483847 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/codo#p> .
+_:genid2147483847 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/codo#c> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid84 <http://www.w3.org/2003/11/swrl#head> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid90 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#hasUncle> .
+_:genid90 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/codo#c> .
+_:genid90 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/codo#b> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid91 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid91 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid91 <http://www.w3.org/2000/01/rdf-schema#label> "Niece Rule" .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid91 <http://www.w3.org/2003/11/swrl#body> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid2147483845 .
+_:genid2147483845 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid2147483845 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#hasSibling> .
+_:genid2147483845 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/codo#p> .
+_:genid2147483845 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/codo#s> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid93 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#hasDaughter> .
+_:genid93 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/codo#p> .
+_:genid93 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/codo#c> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid91 <http://www.w3.org/2003/11/swrl#head> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid97 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#hasNiece> .
+_:genid97 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/codo#s> .
+_:genid97 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/codo#c> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid98 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid98 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid98 <http://www.w3.org/2000/01/rdf-schema#label> "Nephew Rule" .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid98 <http://www.w3.org/2003/11/swrl#body> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid2147483846 .
+_:genid2147483846 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid2147483846 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#hasSibling> .
+_:genid2147483846 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/codo#p> .
+_:genid2147483846 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/codo#s> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid100 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#hasSon> .
+_:genid100 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/codo#p> .
+_:genid100 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/codo#c> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid98 <http://www.w3.org/2003/11/swrl#head> _:genid102 .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid103 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.isibang.ac.in/ns/codo#hasNephew> .
+_:genid103 <http://www.w3.org/2003/11/swrl#argument1> <http://www.isibang.ac.in/ns/codo#s> .
+_:genid103 <http://www.w3.org/2003/11/swrl#argument2> <http://www.isibang.ac.in/ns/codo#c> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
